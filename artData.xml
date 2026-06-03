@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <artData>
   <artPost>
-    <metadata>
-      <type>personal</type>
-      <is3D>false</is3D>
-      <title>Art Title</title>
-      <description>Art Description</description>
-      <sourceLink>source link</sourceLink>
-    </metadata>
-    <carousel>
-      <image url="image link 0" />
-      <image url="image link 1" />
-      <image url="image link 2" />
-      <embed><![CDATA[
-embed code
-      ]]></embed>
-    </carousel>
+  <metadata>
+    <type>personal</type>
+    <is3D>false</is3D>
+    <title>Boss</title>
+    <description>text</description>
+    <sourceLink>https://spewku.artstation.com/projects/V25qY4</sourceLink>
+  </metadata>
+  <carousel>
+    <image url="https://cdnb.artstation.com/p/assets/images/images/099/256/387/large/spewku-boss-icon.jpg?1779389616" />
+
+  </carousel>
   </artPost>
 </artData>
