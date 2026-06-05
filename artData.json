@@ -1,7 +1,7 @@
 {
   "artData": [
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "Commission 2025",
       "description": "",
@@ -23,7 +23,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "Commission",
       "description": "",
@@ -56,7 +56,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "Commission 2026",
       "description": "Commission for Kamee",
@@ -69,7 +69,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Modeled Weapon Assignment V2",
       "description": "Weapon assignment for 3D modeling 2, now using skills in zbrush.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager, Substance painter, and Zbrush",
       "sourceLink": "https://www.artstation.com/artwork/3EK3Kv",
@@ -109,7 +109,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Modeled Fox Door Knocker ",
       "description": "Doorknocker Assignment for 3D modeling 2.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager and Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/qJDqDz",
@@ -188,7 +188,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Modeled Sci-Fi Hallway",
       "description": "Sci-fi Hallway final for 3D modeling 1\nModeled parts of hall way in Maya, then moved to Unreal Engine to implement all the pieces together to create a walkable environment. No texturing, everything is done through lighting in Unreal.",
       "sourceLink": "https://www.artstation.com/artwork/dyk3AW",
@@ -209,7 +209,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Modeled Caravan",
       "description": "Caravan Modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter",
       "sourceLink": "https://www.artstation.com/artwork/8B3Pr6",
@@ -226,7 +226,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Personal Avatar Retexture Practice",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/XJkNdl",
@@ -240,7 +240,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Avatar Retexture 2025",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/XJkNd0",
@@ -254,7 +254,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Modeled Weapon",
       "description": "Weapon modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/gRaV9G",
@@ -269,7 +269,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/kNJmG2",
@@ -279,8 +279,8 @@
       "embed": ""
     },
     {
-      "type": "personal",
-      "is3D": false,
+      "type": "professional",
+      "is3D": true,
       "title": "Avater Retexture Commission",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/zx305D",
@@ -292,8 +292,8 @@
       "embed": ""
     },
     {
-      "type": "personal",
-      "is3D": false,
+      "type": "professional",
+      "is3D": true,
       "title": "Avatar Rexture Commission",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/984Pyv",
@@ -307,7 +307,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Personal Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/DLbQ90",
@@ -322,7 +322,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Modeled Drill Press",
       "description": "Drill Press modeling Final for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/y4r2QO",
@@ -341,8 +341,8 @@
       "embed": ""
     },
     {
-      "type": "personal",
-      "is3D": false,
+      "type": "professional",
+      "is3D": true,
       "title": "Avatar Retexture Comission 2024",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/P6WgOr",
@@ -356,7 +356,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Modeled Pencil Sharpener",
       "description": "Pencil Sharpener modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/4NGPaq",
@@ -371,7 +371,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Modeled Chess Pieces",
       "description": "Chess Pieces modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/AZ16QX",
@@ -383,7 +383,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Splatoon Modeled Arcade Machine ",
       "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/gRaVPG",
@@ -401,7 +401,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Personal Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/ZlkDP0",
@@ -415,8 +415,8 @@
       "embed": ""
     },
     {
-      "type": "personal",
-      "is3D": false,
+      "type": "professional",
+      "is3D": true,
       "title": "Avatar Retexture Commission 2024",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/984PBv",
@@ -431,7 +431,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Avatar Retexture Practice",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/y4r2AO",
@@ -445,7 +445,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Avatar Retexture Practice",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/lGkOEY",
@@ -457,7 +457,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/nJkvde",
@@ -468,7 +468,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/4NGP1q",
@@ -479,7 +479,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Personal Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/L4Ngar",
@@ -495,7 +495,7 @@
     },
     {
       "type": "personal",
-      "is3D": false,
+      "is3D": true,
       "title": "Sleep Token inspired avatar",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/Ov6gvb",
@@ -549,7 +549,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "2025 Commission",
       "description": "",
@@ -613,7 +613,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "2025 Commission",
       "description": "",
@@ -657,7 +657,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "2025 Commission",
       "description": "",
@@ -779,7 +779,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
@@ -823,7 +823,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
@@ -856,7 +856,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
@@ -889,7 +889,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
@@ -900,7 +900,7 @@
       "embed": ""
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
