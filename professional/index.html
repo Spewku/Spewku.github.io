@@ -44,7 +44,14 @@
   <dialog class="detail" id="detail">
     <div class="detail-scroll">
       <button class="detail-close" id="detailClose" aria-label="Close">&times;</button>
-      <img class="detail-hero" id="detailHero" alt="" />
+      <div class="detail-hero-row">
+        <button class="detail-nav detail-nav--prev" id="detailPrev" aria-label="Previous image">&#8249;</button>
+        <div class="detail-hero-wrap">
+          <img class="detail-hero" id="detailHero" alt="" />
+          <div class="detail-counter" id="detailCounter"></div>
+        </div>
+        <button class="detail-nav detail-nav--next" id="detailNext" aria-label="Next image">&#8250;</button>
+      </div>
       <h2 class="detail-title" id="detailTitle"></h2>
       <p class="detail-desc" id="detailDesc"></p>
       <div class="detail-carousel" id="detailCarousel"></div>
@@ -86,20 +93,55 @@
       });
     }
 
+    let currentImages = [];
+    let currentImageIndex = 0;
+
+    function showImage(index) {
+      if (!currentImages.length) return;
+      if (index < 0) index = currentImages.length - 1;
+      if (index >= currentImages.length) index = 0;
+      currentImageIndex = index;
+
+      const hero = document.getElementById('detailHero');
+      hero.src = currentImages[index];
+      hero.alt = '';
+
+      const counter = document.getElementById('detailCounter');
+      counter.textContent = currentImages.length > 1
+        ? `${index + 1} / ${currentImages.length}`
+        : '';
+
+      const thumbs = document.querySelectorAll('.detail-carousel-img');
+      thumbs.forEach((t, i) => t.classList.toggle('detail-carousel-img--active', i === index));
+
+      document.getElementById('detailPrev').style.display = currentImages.length > 1 ? '' : 'none';
+      document.getElementById('detailNext').style.display = currentImages.length > 1 ? '' : 'none';
+
+      const activeThumb = thumbs[index];
+      if (activeThumb) activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+
     function openDetail(encoded) {
       if (!encoded) return;
       const item = JSON.parse(decodeURIComponent(encoded));
       const dialog = document.getElementById('detail');
 
-      document.getElementById('detailHero').src = item.images[0] || '';
-      document.getElementById('detailHero').alt = item.title;
+      currentImages = item.images || [];
+      currentImageIndex = 0;
+
+      showImage(0);
+
       document.getElementById('detailTitle').textContent = item.title;
       document.getElementById('detailDesc').textContent = item.description;
 
       const carousel = document.getElementById('detailCarousel');
-      carousel.innerHTML = item.images.map(src =>
-        `<img src="${src}" alt="" class="detail-carousel-img" />`
+      carousel.innerHTML = currentImages.map((src, i) =>
+        `<img src="${src}" alt="" class="detail-carousel-img" data-index="${i}" />`
       ).join('');
+
+      carousel.querySelectorAll('.detail-carousel-img').forEach(el => {
+        el.addEventListener('click', () => showImage(Number(el.dataset.index)));
+      });
 
       const source = document.getElementById('detailSource');
       if (item.sourceLink) {
@@ -131,6 +173,14 @@
         document.getElementById('detail').close();
         document.body.style.overflow = '';
       }
+    });
+
+    document.getElementById('detailPrev').addEventListener('click', () => showImage(currentImageIndex - 1));
+    document.getElementById('detailNext').addEventListener('click', () => showImage(currentImageIndex + 1));
+
+    document.getElementById('detail').addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { showImage(currentImageIndex - 1); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { showImage(currentImageIndex + 1); e.preventDefault(); }
     });
 
     loadGallery();
