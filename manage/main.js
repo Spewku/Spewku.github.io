@@ -300,7 +300,7 @@ function initGate(onUnlock) {
   };
 
   gateBtn.addEventListener("click", () => {
-    if (gatePass.value === UPLOADPASS) {
+    if (gatePass.value === UPLOADPASS && !UPLOADPASS.includes("secrets.")) {
       gateError.textContent = "";
       unlock();
     } else {
