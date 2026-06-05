@@ -531,7 +531,7 @@ body {
 }
 
 .drop-body.drop-open {
-  max-height: 5000px;
+  max-height: 5000000px;
   padding: 0 18px 14px;
 }
 
