@@ -1,7 +1,6 @@
 const UPLOADPASS = "secrets.UPLOADPASS";
-const ACCTOKEN = "secrets.ACCTOKEN";
+const DISPATCH_TOKEN = "secrets.DISPATCH_TOKEN";
 const REPO = "Spewku/Spewku.github.io";
-const DATA_PATH = "artData.json";
 
 let artData = [];
 let currentEditIdx = -1;
@@ -16,16 +15,6 @@ const CATEGORY_MAP = {
 
 const CATEGORY_KEYS = Object.keys(CATEGORY_MAP);
 
-async function fetchShaFromGithub(token) {
-  const url = `https://api.github.com/repos/${REPO}/contents/${DATA_PATH}`;
-  const res = await fetch(url, {
-    headers: { Authorization: `token ${token}`, Accept: "application/vnd.github.v3+json" },
-  });
-  if (!res.ok) throw new Error(`Failed to fetch sha (${res.status})`);
-  const { sha } = await res.json();
-  return sha;
-}
-
 async function loadLocalData() {
   const res = await fetch("../artData.json");
   if (!res.ok) throw new Error(`Failed to load local data (${res.status})`);
@@ -34,30 +23,22 @@ async function loadLocalData() {
   renderAll();
 }
 
-async function commitToGithub(token) {
-  const sha = await fetchShaFromGithub(token);
-  const updated = JSON.stringify({ artData }, null, 2);
-  const newBase64 = btoa(unescape(encodeURIComponent(updated)));
-  const body = {
-    message: "Update art data via manage page",
-    content: newBase64,
-    sha,
-  };
-  const url = `https://api.github.com/repos/${REPO}/contents/${DATA_PATH}`;
+async function dispatchCommit(token) {
+  const data = JSON.stringify({ artData }, null, 2);
+  const url = `https://api.github.com/repos/${REPO}/actions/workflows/commit-artdata.yml/dispatches`;
   const res = await fetch(url, {
-    method: "PUT",
+    method: "POST",
     headers: {
-      Authorization: `token ${token}`,
+      Authorization: `Bearer ${token}`,
       Accept: "application/vnd.github.v3+json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(body),
+    body: JSON.stringify({ ref: "main", inputs: { data } }),
   });
   if (!res.ok) {
     const err = await res.json();
-    throw new Error(`GitHub API error (${res.status}): ${err.message}`);
+    throw new Error(`Dispatch error (${res.status}): ${err.message}`);
   }
-  return res.json();
 }
 
 function getCategory(entry) {
@@ -361,8 +342,8 @@ async function init() {
     status.textContent = "Committing to GitHub...";
     status.className = "status-msg";
     try {
-      const result = await commitToGithub(ACCTOKEN);
-      status.textContent = `Saved! SHA: ${result.content.sha.slice(0, 7)}`;
+      await dispatchCommit(DISPATCH_TOKEN);
+      status.textContent = "Commit dispatched! It will appear on the live site in a few minutes.";
       status.className = "status-msg success";
       dirty = false;
     } catch (e) {
