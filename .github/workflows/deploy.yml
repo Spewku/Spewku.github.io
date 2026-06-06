@@ -23,11 +23,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Inject secrets into manage page
-        run: |
-          sed -i "s/secrets\.UPLOADPASS/${{ secrets.UPLOADPASS }}/g" manage/main.js
-          sed -i "s/secrets\.DISPATCH_TOKEN/${{ secrets.DISPATCH_TOKEN }}/g" manage/main.js
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
