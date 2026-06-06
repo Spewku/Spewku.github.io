@@ -14,6 +14,7 @@ html {
 body {
   width: 100%;
   min-height: 100%;
+  position: relative;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
     "Helvetica Neue", Arial, sans-serif;
   background: radial-gradient(circle at 10% 20%, #0a0e1a 0, #050508 55%, #080a12 100%);
