@@ -74,7 +74,7 @@
       "id": "5W6x6J"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Weapon Assignment V2",
       "description": "Weapon assignment for 3D modeling 2, now using skills in zbrush.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager, Substance painter, and Zbrush",
@@ -116,7 +116,7 @@
       "id": "3EOAOJ"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Fox Door Knocker ",
       "description": "Doorknocker Assignment for 3D modeling 2.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager and Substance painter.",
@@ -201,7 +201,7 @@
       "id": "DLb3ge"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Sci-Fi Hallway",
       "description": "Sci-fi Hallway final for 3D modeling 1\nModeled parts of hall way in Maya, then moved to Unreal Engine to implement all the pieces together to create a walkable environment. No texturing, everything is done through lighting in Unreal.",
@@ -223,7 +223,7 @@
       "id": "dyk3AW"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Caravan",
       "description": "Caravan Modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter",
@@ -271,7 +271,7 @@
       "id": "XJkNd0"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Weapon",
       "description": "Weapon modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
@@ -299,21 +299,7 @@
       "id": "kNJmG2"
     },
     {
-      "type": "professional",
-      "is3D": true,
-      "title": "Avater Retexture Commission",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/zx305D",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/489/large/spewku-71.webp?1765405875",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/493/large/spewku-70.webp?1765405878",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/487/large/spewku-69.webp?1765405872"
-      ],
-      "embed": "",
-      "id": "zx305D"
-    },
-    {
-      "type": "professional",
+      "type": "personal",
       "is3D": true,
       "title": "Avatar Rexture Commission",
       "description": "",
@@ -326,6 +312,20 @@
       ],
       "embed": "",
       "id": "984Pyv"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Avater Retexture Commission",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/zx305D",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/489/large/spewku-71.webp?1765405875",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/493/large/spewku-70.webp?1765405878",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/487/large/spewku-69.webp?1765405872"
+      ],
+      "embed": "",
+      "id": "zx305D"
     },
     {
       "type": "personal",
@@ -344,7 +344,7 @@
       "id": "DLbQ90"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Drill Press",
       "description": "Drill Press modeling Final for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
@@ -365,7 +365,7 @@
       "id": "y4r2QO"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": true,
       "title": "Avatar Retexture Comission 2024",
       "description": "",
@@ -380,7 +380,7 @@
       "id": "P6WgOr"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Pencil Sharpener",
       "description": "Pencil Sharpener modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
@@ -396,7 +396,7 @@
       "id": "4NGPaq"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Chess Pieces",
       "description": "Chess Pieces modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
@@ -409,7 +409,7 @@
       "id": "AZ16QX"
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Splatoon Modeled Arcade Machine ",
       "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
@@ -444,7 +444,7 @@
       "id": "ZlkDP0"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": true,
       "title": "Avatar Retexture Commission 2024",
       "description": "",
