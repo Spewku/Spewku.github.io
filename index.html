@@ -40,7 +40,7 @@
           <h1 class="root-name">SPEWKU</h1>
           <div class="root-bio-row">
             <p class="root-bio">
-              Hi there! My name Spewku<br/>
+              Hi there! My name is Spewku<br/>
               I am currently 20 attending College, I'm majoring in Game Art and minoring in Psychology<br/>
               Currently I do art as a passion but hopefully one day as my full time job!<br/>
               I have many different types of Mediums I work on so check em out!
@@ -70,9 +70,7 @@
           <div class="root-links">
             <a href="https://www.artstation.com/spewku" target="_blank" rel="noopener noreferrer" class="root-link-btn">ArtStation</a>
             <a href="https://toyhou.se/spewkuu" target="_blank" rel="noopener noreferrer" class="root-link-btn">Toyhouse</a>
-            <a href="https://www.etsy.com/shop/Spewku" target="_blank" rel="noopener noreferrer" class="root-link-btn">Etsy</a>
-            <a href="https://spewku.threadless.com/" target="_blank" rel="noopener noreferrer" class="root-link-btn">Threadless</a>
-            <a href="mailto:spewku.business@gmail.com" target="_blank" rel="noopener noreferrer" class="root-link-btn">Email</a>
+            <!-- <a href="https://spewku.threadless.com/" target="_blank" rel="noopener noreferrer" class="root-link-btn">Threadless</a> -->
           </div>
         </div>
       </div>
@@ -81,25 +79,17 @@
     <!-- main content -->
     <div class="root-body">
       <main class="root-content">
-        <div class="drops-row">
-          <section class="drop-section">
-            <button class="drop-head" data-target="drop2d">
-              <span>2D</span>
-              <svg class="drop-arrow" width="14" height="8" viewBox="0 0 14 8" fill="currentColor"><path d="M1 1l6 6 6-6"/></svg>
-            </button>
-            <div class="drop-body" id="drop2d">
-              <div class="grid" id="grid2d"></div>
-            </div>
-          </section>
-          <section class="drop-section">
-            <button class="drop-head" data-target="drop3d">
-              <span>3D</span>
-              <svg class="drop-arrow" width="14" height="8" viewBox="0 0 14 8" fill="currentColor"><path d="M1 1l6 6 6-6"/></svg>
-            </button>
-            <div class="drop-body" id="drop3d">
-              <div class="grid" id="grid3d"></div>
-            </div>
-          </section>
+        <div class="tabs">
+          <div class="tabs-bar">
+            <button class="tab-head tab-head--active" data-tab="tab2d">2D Portfolio</button>
+            <button class="tab-head" data-tab="tab3d">3D Portfolio</button>
+          </div>
+          <div class="tab-body tab-body--active" id="tab2d">
+            <div class="grid" id="grid2d"></div>
+          </div>
+          <div class="tab-body" id="tab3d">
+            <div class="grid" id="grid3d"></div>
+          </div>
         </div>
 
         <div class="root-commission">
@@ -109,6 +99,15 @@
         </div>
       </main>
     </div>
+
+    <footer class="root-footer">
+      <h2 class="root-footer-heading">Contact Me</h2>
+      <div class="root-footer-links">
+        <a href="mailto:spewku.business@gmail.com" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn ">Email</a>
+        <a href="https://www.etsy.com/shop/Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn ">Etsy</a>
+        <a href="https://cash.app/$Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn ">Cash App</a>
+      </div>
+    </footer>
   </div>
 
   <dialog class="detail" id="detail">
@@ -260,12 +259,21 @@
       if (e.key === 'ArrowRight') { showImage(currentImageIndex + 1); e.preventDefault(); }
     });
 
-    document.querySelectorAll('.drop-head').forEach(btn => {
+    let activeTab = 'tab2d';
+    document.querySelectorAll('.tab-head').forEach(btn => {
       btn.addEventListener('click', () => {
-        const body = document.getElementById(btn.dataset.target);
-        const arrow = btn.querySelector('.drop-arrow');
-        const isOpen = body.classList.toggle('drop-open');
-        arrow.classList.toggle('drop-arrow--open', isOpen);
+        const tab = btn.dataset.tab;
+        if (tab === activeTab) {
+          document.querySelectorAll('.tab-head').forEach(b => b.classList.remove('tab-head--active'));
+          document.querySelectorAll('.tab-body').forEach(b => b.classList.remove('tab-body--active'));
+          activeTab = null;
+        } else {
+          document.querySelectorAll('.tab-head').forEach(b => b.classList.remove('tab-head--active'));
+          document.querySelectorAll('.tab-body').forEach(b => b.classList.remove('tab-body--active'));
+          btn.classList.add('tab-head--active');
+          document.getElementById(tab).classList.add('tab-body--active');
+          activeTab = tab;
+        }
       });
     });
 
