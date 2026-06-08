@@ -156,7 +156,7 @@
       const grid = document.getElementById(id);
       const parent = grid.closest('.drop-body');
       grid.innerHTML = items.map(item => {
-        const thumb = item.images[0] || '';
+        const thumb = item.thumbnail || item.images[0] || '';
         const encoded = encodeURIComponent(JSON.stringify(item));
         return `<div class="card" data-post='${encoded}'>
           <div class="card-thumb" style="background-image:url('${thumb}')"></div>

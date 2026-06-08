@@ -80,7 +80,7 @@
     function renderGrid(id, items) {
       const grid = document.getElementById(id);
       grid.innerHTML = items.map(item => {
-        const thumb = item.images[0] || '';
+        const thumb = item.thumbnail || item.images[0] || '';
         const encoded = encodeURIComponent(JSON.stringify(item));
         return `<div class="card" data-post='${encoded}'>
           <div class="card-thumb" style="background-image:url('${thumb}')"></div>
