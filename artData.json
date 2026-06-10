@@ -1,19 +1,7 @@
 {
   "artData": [
     {
-      "type": "professional",
-      "is3D": false,
-      "title": "Commission 2025",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/V25qY4",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/099/256/387/large/spewku-boss-icon.jpg?1779389616"
-      ],
-      "embed": "",
-      "id": "V25qY4"
-    },
-    {
-      "type": "personal",
+      "type": "false",
       "is3D": false,
       "title": "Personal Experimental Art",
       "description": "",
@@ -22,10 +10,12 @@
         "https://cdnb.artstation.com/p/assets/images/images/099/256/217/large/spewku-kat-layin.jpg?1779389493"
       ],
       "embed": "",
-      "id": "vbnOBE"
+      "id": "vbnOBE",
+      "thumbnail": "https://spewku.artstation.com/projects/vbnOBE?album_id=14747081",
+      "thumbnailCrop": null
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "Commission",
       "description": "",
@@ -61,7 +51,7 @@
       "id": "6L90xN"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "Commission 2026",
       "description": "Commission for Kamee",
@@ -72,6 +62,35 @@
       ],
       "embed": "",
       "id": "5W6x6J"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Modeled Weapon Assignment V2",
+      "description": "Weapon assignment for 3D modeling 2, now using skills in zbrush.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager, Substance painter, and Zbrush",
+      "sourceLink": "https://www.artstation.com/artwork/3EK3Kv",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/098/223/024/large/spewku-sp1.webp?1776445911",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/028/large/spewku-sp2.webp?1776445917",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/034/large/spewku-sp3.webp?1776445922",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/036/large/spewku-sp4.webp?1776445927",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/040/large/spewku-sp5.webp?1776445933",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/042/large/spewku-sp6.webp?1776445938",
+        "https://cdnb.artstation.com/p/assets/images/images/098/223/045/large/spewku-sp7.webp?1776445942",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/048/large/spewku-st1.webp?1776445947",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/052/large/spewku-st2.webp?1776445952",
+        "https://cdnb.artstation.com/p/assets/images/images/098/223/057/large/spewku-st3.webp?1776445958",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/062/large/spewku-st4.webp?1776445963",
+        "https://cdnb.artstation.com/p/assets/images/images/098/223/069/large/spewku-st5.webp?1776445967",
+        "https://cdnb.artstation.com/p/assets/images/images/098/223/071/large/spewku-st6.webp?1776445973",
+        "https://cdnb.artstation.com/p/assets/images/images/098/223/075/large/spewku-zb1.webp?1776445977",
+        "https://cdna.artstation.com/p/assets/images/images/098/223/076/large/spewku-zb2.webp?1776445979",
+        "https://cdnb.artstation.com/p/assets/images/images/098/223/077/large/spewku-zb3.webp?1776445981",
+        "https://cdnb.artstation.com/p/assets/images/images/098/223/079/large/spewku-zb4.webp?1776445983",
+        "https://cdnb.artstation.com/p/assets/images/images/098/223/081/large/spewku-zb5.webp?1776445985"
+      ],
+      "embed": "",
+      "id": "3EK3Kv"
     },
     {
       "type": "professional",
@@ -114,6 +133,40 @@
       ],
       "embed": "",
       "id": "3EOAOJ"
+    },
+    {
+      "type": "personal",
+      "is3D": false,
+      "title": "Commission 2025",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/V25qY4",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/099/256/387/large/spewku-boss-icon.jpg?1779389616"
+      ],
+      "embed": "",
+      "id": "V25qY4"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Modeled Fox Door Knocker ",
+      "description": "Doorknocker Assignment for 3D modeling 2.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager and Substance painter.",
+      "sourceLink": "https://www.artstation.com/artwork/qJDqDz",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/096/280/687/large/spewku-st-1.webp?1770850952",
+        "https://cdna.artstation.com/p/assets/images/images/096/280/684/large/spewku-st-6.webp?1770850943",
+        "https://cdnb.artstation.com/p/assets/images/images/096/280/685/large/spewku-st-5.webp?1770850947",
+        "https://cdna.artstation.com/p/assets/images/images/096/280/686/large/spewku-st-4.webp?1770850950",
+        "https://cdna.artstation.com/p/assets/images/images/096/280/688/large/spewku-st-3.webp?1770850955",
+        "https://cdna.artstation.com/p/assets/images/images/096/280/690/large/spewku-sp-7.webp?1770850961",
+        "https://cdnb.artstation.com/p/assets/images/images/096/280/691/large/spewku-sp-6.webp?1770850964",
+        "https://cdna.artstation.com/p/assets/images/images/096/280/692/large/spewku-sp-5.webp?1770850967",
+        "https://cdnb.artstation.com/p/assets/images/images/096/280/693/large/spewku-sp-4.webp?1770850969",
+        "https://cdna.artstation.com/p/assets/images/images/096/280/694/large/spewku-sp-1.webp?1770850972",
+        "https://cdna.artstation.com/p/assets/images/images/096/280/696/large/spewku-sp-3.webp?1770850974"
+      ],
+      "embed": "",
+      "id": "qJDqDz"
     },
     {
       "type": "professional",
@@ -201,6 +254,28 @@
       "id": "DLb3ge"
     },
     {
+      "type": "personal",
+      "is3D": true,
+      "title": "Modeled Sci-Fi Hallway",
+      "description": "Sci-fi Hallway final for 3D modeling 1\nModeled parts of hall way in Maya, then moved to Unreal Engine to implement all the pieces together to create a walkable environment. No texturing, everything is done through lighting in Unreal.",
+      "sourceLink": "https://www.artstation.com/artwork/dyk3AW",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/125/large/spewku-1.webp?1765516456",
+        "https://cdna.artstation.com/p/assets/images/images/094/483/126/large/spewku-2.webp?1765516459",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/129/large/spewku-3.webp?1765516461",
+        "https://cdna.artstation.com/p/assets/images/images/094/483/132/large/spewku-4.webp?1765516465",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/133/large/spewku-5.webp?1765516469",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/135/large/spewku-6.webp?1765516472",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/137/large/spewku-7.webp?1765516475",
+        "https://cdna.artstation.com/p/assets/images/images/094/483/138/large/spewku-8.webp?1765516478",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/139/large/spewku-9.webp?1765516481",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/141/large/spewku-10.webp?1765516485",
+        "https://cdna.artstation.com/p/assets/images/images/094/483/142/large/spewku-11.webp?1765516488"
+      ],
+      "embed": "",
+      "id": "dyk3AW"
+    },
+    {
       "type": "professional",
       "is3D": true,
       "title": "Modeled Sci-Fi Hallway",
@@ -224,6 +299,24 @@
     },
     {
       "type": "professional",
+      "is3D": true,
+      "title": "Modeled Caravan",
+      "description": "Caravan Modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter",
+      "sourceLink": "https://www.artstation.com/artwork/8B3Pr6",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/637/large/spewku-96.jpg?1765406222",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/625/large/spewku-95.webp?1765406186",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/628/large/spewku-94.webp?1765406189",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/630/large/spewku-93.webp?1765406192",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/632/large/spewku-92.webp?1765406195",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/634/large/spewku-91.webp?1765406199",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/635/large/spewku-90.webp?1765406202"
+      ],
+      "embed": "",
+      "id": "8B3Pr6"
+    },
+    {
+      "type": "personal",
       "is3D": true,
       "title": "Modeled Caravan",
       "description": "Caravan Modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter",
@@ -269,6 +362,22 @@
       ],
       "embed": "",
       "id": "XJkNd0"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Modeled Weapon",
+      "description": "Weapon modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
+      "sourceLink": "https://www.artstation.com/artwork/gRaV9G",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/529/large/spewku-82.jpg?1765405982",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/528/large/spewku-83.webp?1765405953",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/531/large/spewku-81.webp?1765405958",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/532/large/spewku-85.webp?1765405961",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/535/large/spewku-84.webp?1765405964"
+      ],
+      "embed": "",
+      "id": "gRaV9G"
     },
     {
       "type": "professional",
@@ -344,6 +453,27 @@
       "id": "DLbQ90"
     },
     {
+      "type": "personal",
+      "is3D": true,
+      "title": "Modeled Drill Press",
+      "description": "Drill Press modeling Final for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
+      "sourceLink": "https://www.artstation.com/artwork/y4r2QO",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/094/437/392/large/spewku-53.webp?1765405716",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/384/large/spewku-57.webp?1765405705",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/386/large/spewku-56.webp?1765405707",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/388/large/spewku-55.webp?1765405710",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/391/large/spewku-54.webp?1765405713",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/393/large/spewku-52.webp?1765405718",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/394/large/spewku-51.webp?1765405721",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/396/large/spewku-50.webp?1765405725",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/398/large/spewku-49.webp?1765405727",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/401/large/spewku-58.webp?1765405730"
+      ],
+      "embed": "",
+      "id": "y4r2QO"
+    },
+    {
       "type": "professional",
       "is3D": true,
       "title": "Modeled Drill Press",
@@ -380,6 +510,44 @@
       "id": "P6WgOr"
     },
     {
+      "type": "personal",
+      "is3D": true,
+      "title": "Splatoon Modeled Arcade Machine ",
+      "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
+      "sourceLink": "https://www.artstation.com/artwork/gRaVPG",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/094/437/284/large/spewku-37.webp?1765405483",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/281/large/spewku-40.webp?1765405473",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/274/large/spewku-44.webp?1765405459",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/278/large/spewku-43.webp?1765405463",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/279/large/spewku-42.webp?1765405467",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/280/large/spewku-41.webp?1765405470",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/282/large/spewku-39.webp?1765405476",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/283/large/spewku-38.webp?1765405480"
+      ],
+      "embed": "",
+      "id": "gRaVPG"
+    },
+    {
+      "type": "professional",
+      "is3D": true,
+      "title": "Splatoon Modeled Arcade Machine ",
+      "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
+      "sourceLink": "https://www.artstation.com/artwork/gRaVPG",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/094/437/284/large/spewku-37.webp?1765405483",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/281/large/spewku-40.webp?1765405473",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/274/large/spewku-44.webp?1765405459",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/278/large/spewku-43.webp?1765405463",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/279/large/spewku-42.webp?1765405467",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/280/large/spewku-41.webp?1765405470",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/282/large/spewku-39.webp?1765405476",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/283/large/spewku-38.webp?1765405480"
+      ],
+      "embed": "",
+      "id": "gRaVPG"
+    },
+    {
       "type": "professional",
       "is3D": true,
       "title": "Modeled Pencil Sharpener",
@@ -407,25 +575,6 @@
       ],
       "embed": "",
       "id": "AZ16QX"
-    },
-    {
-      "type": "professional",
-      "is3D": true,
-      "title": "Splatoon Modeled Arcade Machine ",
-      "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
-      "sourceLink": "https://www.artstation.com/artwork/gRaVPG",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/094/437/284/large/spewku-37.webp?1765405483",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/281/large/spewku-40.webp?1765405473",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/274/large/spewku-44.webp?1765405459",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/278/large/spewku-43.webp?1765405463",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/279/large/spewku-42.webp?1765405467",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/280/large/spewku-41.webp?1765405470",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/282/large/spewku-39.webp?1765405476",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/283/large/spewku-38.webp?1765405480"
-      ],
-      "embed": "",
-      "id": "gRaVPG"
     },
     {
       "type": "personal",
@@ -458,6 +607,35 @@
       ],
       "embed": "",
       "id": "984PBv"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Modeled Pencil Sharpener",
+      "description": "Pencil Sharpener modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
+      "sourceLink": "https://www.artstation.com/artwork/4NGPaq",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/094/437/322/large/spewku-24.webp?1765405599",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/323/large/spewku-23.webp?1765405603",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/324/large/spewku-22.webp?1765405606",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/325/large/spewku-21.webp?1765405609",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/327/large/spewku-20.webp?1765405612"
+      ],
+      "embed": "",
+      "id": "4NGPaq"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Modeled Chess Pieces",
+      "description": "Chess Pieces modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
+      "sourceLink": "https://www.artstation.com/artwork/AZ16QX",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/313/large/spewku-18.jpg?1765406360",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/315/large/spewku-19.webp?1765405570"
+      ],
+      "embed": "",
+      "id": "AZ16QX"
     },
     {
       "type": "personal",
@@ -589,7 +767,7 @@
       "id": "DLbErO"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "2025 Commission",
       "description": "",
@@ -658,7 +836,7 @@
       "id": "YG0bA3"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "2025 Commission",
       "description": "",
@@ -706,7 +884,7 @@
       "id": "3E2ayJ"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "2025 Commission",
       "description": "",
@@ -839,7 +1017,7 @@
       "id": "K3mPxr"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
@@ -887,7 +1065,7 @@
       "id": "L4NE1P"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
@@ -923,7 +1101,7 @@
       "id": "1N9BJG"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
@@ -959,7 +1137,7 @@
       "id": "rlk082"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
@@ -971,7 +1149,7 @@
       "id": "YG0bDb"
     },
     {
-      "type": "professional",
+      "type": "personal",
       "is3D": false,
       "title": "2024 Commission",
       "description": "",
