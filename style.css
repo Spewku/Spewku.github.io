@@ -671,7 +671,7 @@ body {
 
 .detail-hero {
   width: 100%;
-  max-height: 60vh;
+  max-height: 50vh;
   object-fit: contain;
   border-radius: 12px;
   background: #0a0a12;
@@ -727,6 +727,7 @@ body {
   display: flex;
   gap: 8px;
   overflow-x: auto;
+  overflow-y: hidden;
   padding: 4px 0;
 }
 
@@ -748,6 +749,24 @@ body {
 .detail-carousel-img--active {
   border-color: #79fbf7;
   opacity: 1;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  background: rgba(9, 144, 247, 0.15);
+  border: 1px solid rgba(9, 144, 247, 0.25);
+  color: #79fbf7;
 }
 
 .detail-source {

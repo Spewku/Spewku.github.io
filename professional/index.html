@@ -54,6 +54,7 @@
       </div>
       <h2 class="detail-title" id="detailTitle"></h2>
       <p class="detail-desc" id="detailDesc"></p>
+      <div class="detail-tags" id="detailTags"></div>
       <div class="detail-carousel" id="detailCarousel"></div>
       <a class="detail-source" id="detailSource" target="_blank" rel="noopener">View source</a>
       <div class="detail-embed" id="detailEmbed"></div>
@@ -133,6 +134,15 @@
 
       document.getElementById('detailTitle').textContent = item.title;
       document.getElementById('detailDesc').textContent = item.description;
+
+      const tagsEl = document.getElementById('detailTags');
+      const tags = item.tags || [];
+      if (tags.length) {
+        tagsEl.innerHTML = tags.map(t => `<span class="tag-badge">${t}</span>`).join(' ');
+        tagsEl.style.display = 'block';
+      } else {
+        tagsEl.style.display = 'none';
+      }
 
       const carousel = document.getElementById('detailCarousel');
       carousel.innerHTML = currentImages.map((src, i) =>
