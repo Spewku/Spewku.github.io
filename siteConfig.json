@@ -1,0 +1,27 @@
+{
+  "personal": {
+    "bio": "Hi there! My name is Spewku\nI am currently 20 attending College, I'm majoring in Game Art and minoring in Psychology\nCurrently I do art as a passion but hopefully one day as my full time job!\nI have many different types of Mediums I work on so check em out!",
+    "commissionLink": "https://spewkuprices.carrd.co/",
+    "socials": {
+      "discord": "https://discord.com/users/653301669295292426",
+      "youtube": "https://www.youtube.com/channel/UCfLTX_yDxQh9ZA-UkRIk4tA",
+      "instagram": "https://www.instagram.com/spewku",
+      "tiktok": "https://www.tiktok.com/@spewkuwu",
+      "x": "https://x.com/Spewkuu",
+      "tumblr": "https://www.tumblr.com/spewkuu"
+    },
+    "links": [
+      { "label": "ArtStation", "url": "https://www.artstation.com/spewku" },
+      { "label": "Toyhouse", "url": "https://toyhou.se/spewkuu" }
+    ],
+    "footerContacts": [
+      { "label": "Email", "url": "mailto:spewku.business@gmail.com" },
+      { "label": "Etsy", "url": "https://www.etsy.com/shop/Spewku" },
+      { "label": "Cash App", "url": "https://cash.app/$Spewku" }
+    ]
+  },
+  "professional": {
+    "bio": "",
+    "contacts": []
+  }
+}

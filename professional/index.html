@@ -35,10 +35,18 @@
   </header>
 
   <main class="gallery" id="gallery">
-    <section class="column">
-      <h2 class="column-heading">Professional Work</h2>
-      <div class="grid" id="gridPro"></div>
-    </section>
+    <div class="pro-tabs">
+      <div class="pro-tabs-bar">
+        <button class="pro-tab-head pro-tab-head--active" data-tab="tabPro2d">2D Work</button>
+        <button class="pro-tab-head" data-tab="tabPro3d">3D Work</button>
+      </div>
+      <div class="pro-tab-body pro-tab-body--active" id="tabPro2d">
+        <div class="grid" id="gridPro2d"></div>
+      </div>
+      <div class="pro-tab-body" id="tabPro3d">
+        <div class="grid" id="gridPro3d"></div>
+      </div>
+    </div>
   </main>
 
   <dialog class="detail" id="detail">
@@ -72,7 +80,11 @@
 
         const filtered = posts.filter(p => p.type === 'professional');
 
-        renderGrid('gridPro', filtered);
+        const pro2d = filtered.filter(p => !p.is3D);
+        const pro3d = filtered.filter(p => p.is3D);
+
+        renderGrid('gridPro2d', pro2d);
+        renderGrid('gridPro3d', pro3d);
       } catch (e) {
         console.error('Failed to load gallery:', e);
       }
@@ -191,6 +203,24 @@
     document.getElementById('detail').addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft') { showImage(currentImageIndex - 1); e.preventDefault(); }
       if (e.key === 'ArrowRight') { showImage(currentImageIndex + 1); e.preventDefault(); }
+    });
+
+    let activeProTab = 'tabPro2d';
+    document.querySelectorAll('.pro-tab-head').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+        if (tab === activeProTab) {
+          document.querySelectorAll('.pro-tab-head').forEach(b => b.classList.remove('pro-tab-head--active'));
+          document.querySelectorAll('.pro-tab-body').forEach(b => b.classList.remove('pro-tab-body--active'));
+          activeProTab = null;
+        } else {
+          document.querySelectorAll('.pro-tab-head').forEach(b => b.classList.remove('pro-tab-head--active'));
+          document.querySelectorAll('.pro-tab-body').forEach(b => b.classList.remove('pro-tab-body--active'));
+          btn.classList.add('pro-tab-head--active');
+          document.getElementById(tab).classList.add('pro-tab-body--active');
+          activeProTab = tab;
+        }
+      });
     });
 
     loadGallery();
