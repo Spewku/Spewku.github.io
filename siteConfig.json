@@ -20,6 +20,36 @@
       { "label": "Cash App", "url": "https://cash.app/$Spewku" }
     ]
   },
+  "about": {
+    "image": "/personal/pfp.png"
+  },
+  "socialsPage": {
+    "icons": [
+      { "name": "Discord", "url": "https://discord.com/users/653301669295292426" },
+      { "name": "YouTube", "url": "https://www.youtube.com/channel/UCfLTX_yDxQh9ZA-UkRIk4tA" },
+      { "name": "Instagram", "url": "https://www.instagram.com/spewku" },
+      { "name": "TikTok", "url": "https://www.tiktok.com/@spewkuwu" },
+      { "name": "X / Twitter", "url": "https://x.com/Spewkuu" },
+      { "name": "Tumblr", "url": "https://www.tumblr.com/spewkuu" }
+    ],
+    "grid": [
+      { "name": "Discord", "url": "https://discord.com/users/653301669295292426" },
+      { "name": "YouTube", "url": "https://www.youtube.com/channel/UCfLTX_yDxQh9ZA-UkRIk4tA" },
+      { "name": "Instagram", "url": "https://www.instagram.com/spewku" },
+      { "name": "TikTok", "url": "https://www.tiktok.com/@spewkuwu" },
+      { "name": "X / Twitter", "url": "https://x.com/Spewkuu" },
+      { "name": "Tumblr", "url": "https://www.tumblr.com/spewkuu" }
+    ],
+    "socialImage": "",
+    "footerContacts": [
+      { "label": "Email", "url": "mailto:spewku.business@gmail.com" },
+      { "label": "Etsy", "url": "https://www.etsy.com/shop/Spewku" },
+      { "label": "Cash App", "url": "https://cash.app/$Spewku" }
+    ]
+  },
+  "site": {
+    "pfpImage": "/personal/pfp.png"
+  },
   "professional": {
     "bio": "",
     "contacts": []
