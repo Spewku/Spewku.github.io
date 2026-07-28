@@ -1,140 +1,104 @@
 /**
- * WebGL water shader renderer.
- * Loads a GLSL fragment shader from a URL and renders it fullscreen on a <canvas>.
- * Passes u_scroll and u_click uniforms for interactive effects.
+ * p5.js water background renderer.
+ * Single large noise texture per layer, scrolled via source offset — no tile edges.
  */
 (function () {
-  var canvas = document.getElementById('waterBg');
-  if (!canvas) return;
+  var target = document.getElementById('waterBg');
+  if (!target) return;
 
-  var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-  if (!gl) {
-    canvas.style.display = 'none';
-    return;
-  }
-
-  function resize() {
-    var dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-    canvas.width = window.innerWidth * dpr;
-    canvas.height = window.innerHeight * dpr;
-    canvas.style.width = window.innerWidth + 'px';
-    canvas.style.height = window.innerHeight + 'px';
-    gl.viewport(0, 0, canvas.width, canvas.height);
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  // Fullscreen quad
-  var verts = new Float32Array([-1,-1, 1,-1, -1,1, 1,1]);
-  var buf = gl.createBuffer();
-  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-  gl.bufferData(gl.ARRAY_BUFFER, verts, gl.STATIC_DRAW);
-
-  var vsSource = 'attribute vec2 a_pos;void main(){gl_Position=vec4(a_pos,0.0,1.0);}';
-
-  function createShader(type, source) {
-    var s = gl.createShader(type);
-    gl.shaderSource(s, source);
-    gl.compileShader(s);
-    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
-      console.error('Shader compile error:', gl.getShaderInfoLog(s));
-      gl.deleteShader(s);
-      return null;
-    }
-    return s;
-  }
-
-  var vs = createShader(gl.VERTEX_SHADER, vsSource);
-  if (!vs) return;
-
-  var fs = null;
-  var program = null;
-  var uTime = null;
-  var uRes = null;
-  var uScroll = null;
-  var uClick = null;
-
-  // Interaction state — smooth values fed to the shader
   var scrollVal = 0;
   var scrollTarget = 0;
-  var clickX = 0.5, clickY = 0.5;
-  var clickAge = 999; // seconds since last click
 
   window.addEventListener('scroll', function () {
     scrollTarget = window.scrollY / Math.max(document.body.scrollHeight - window.innerHeight, 1);
   }, { passive: true });
 
-  canvas.addEventListener('click', function (e) {
-    clickX = e.clientX / window.innerWidth;
-    clickY = 1.0 - e.clientY / window.innerHeight; // flip Y for GL coords
-    clickAge = 0;
-  });
+  var sketch = function (p) {
+    var w, h;
+    var layers = [];
 
-  function buildProgram(fragSource) {
-    if (program) gl.deleteProgram(program);
-    fs = createShader(gl.FRAGMENT_SHADER, fragSource);
-    if (!fs) return;
-
-    program = gl.createProgram();
-    gl.attachShader(program, vs);
-    gl.attachShader(program, fs);
-    gl.linkProgram(program);
-
-    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-      console.error('Program link error:', gl.getProgramInfoLog(program));
-      gl.deleteProgram(program);
-      program = null;
-      return;
+    function generateNoiseTexture(p, tw, th, scale, seed) {
+      var c = document.createElement('canvas');
+      c.width = tw;
+      c.height = th;
+      var ctx = c.getContext('2d');
+      var img = ctx.createImageData(tw, th);
+      var d = img.data;
+      p.noiseSeed(seed);
+      for (var y = 0; y < th; y++) {
+        for (var x = 0; x < tw; x++) {
+          var n = p.noise(x * scale, y * scale);
+          var bright = n * 255;
+          var idx = 4 * (y * tw + x);
+          d[idx]     = 2 + bright * 0.04;
+          d[idx + 1] = 5 + bright * 0.12;
+          d[idx + 2] = 14 + bright * 0.28;
+          d[idx + 3] = 255;
+        }
+      }
+      ctx.putImageData(img, 0, 0);
+      return c;
     }
 
-    gl.useProgram(program);
-    uTime = gl.getUniformLocation(program, 'u_time');
-    uRes = gl.getUniformLocation(program, 'u_resolution');
-    uScroll = gl.getUniformLocation(program, 'u_scroll');
-    uClick = gl.getUniformLocation(program, 'u_click');
+    p.setup = function () {
+      w = window.innerWidth;
+      h = window.innerHeight;
+      p.createCanvas(w, h);
+      p.pixelDensity(1);
+      p.noLoop();
 
-    var posLoc = gl.getAttribLocation(program, 'a_pos');
-    gl.enableVertexAttribArray(posLoc);
-    gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
-  }
+      var texW = w + 256;
+      var texH = h + 256;
+      layers = [
+        { tex: generateNoiseTexture(p, texW, texH, 0.008, 1), speed: 0.4, alpha: 0.5 },
+        { tex: generateNoiseTexture(p, texW, texH, 0.015, 2), speed: 0.7, alpha: 0.35 },
+        { tex: generateNoiseTexture(p, texW, texH, 0.03, 3), speed: 1.0, alpha: 0.2 }
+      ];
 
-  // Read shader path from data attribute, default to water.glsl
-  var shaderUrl = canvas.getAttribute('data-shader') || '/shaders/water.glsl';
+      p.draw();
+    };
 
-  fetch(shaderUrl)
-    .then(function (r) {
-      if (!r.ok) throw new Error(r.status);
-      return r.text();
-    })
-    .then(function (src) {
-      buildProgram(src);
-      if (!program) return;
+    p.draw = function () {
+      scrollVal += (scrollTarget - scrollVal) * 0.04;
 
-      var startTime = performance.now();
-      var lastFrame = startTime;
+      var ctx = p.drawingContext;
+      ctx.imageSmoothingEnabled = true;
 
-      function render(now) {
-        var dt = (now - lastFrame) / 1000.0;
-        lastFrame = now;
-        var t = (now - startTime) / 1000.0;
+      ctx.fillStyle = '#02050e';
+      ctx.fillRect(0, 0, w, h);
 
-        // Smooth scroll interpolation
-        scrollVal += (scrollTarget - scrollVal) * Math.min(dt * 3.0, 1.0);
+      for (var i = 0; i < layers.length; i++) {
+        var L = layers[i];
+        var tex = L.tex;
+        var tw = tex.width;
+        var th = tex.height;
+        var offsetX = (scrollVal * L.speed * 100) % tw;
+        var offsetY = (scrollVal * L.speed * 200) % th;
 
-        // Age the click
-        clickAge += dt;
-
-        gl.uniform1f(uTime, t);
-        gl.uniform2f(uRes, canvas.width, canvas.height);
-        gl.uniform1f(uScroll, scrollVal);
-        gl.uniform4f(uClick, clickX, clickY, clickAge, 0.0);
-        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-        requestAnimationFrame(render);
+        ctx.globalAlpha = L.alpha;
+        ctx.globalCompositeOperation = 'lighter';
+        ctx.drawImage(tex, offsetX, offsetY, w, h, 0, 0, w, h);
       }
-      requestAnimationFrame(render);
-    })
-    .catch(function (e) {
-      console.warn('Could not load water shader:', e);
-      canvas.style.display = 'none';
-    });
+
+      ctx.globalAlpha = 1;
+      ctx.globalCompositeOperation = 'source-over';
+
+      requestAnimationFrame(function () { p.draw(); });
+    };
+
+    p.windowResized = function () {
+      w = window.innerWidth;
+      h = window.innerHeight;
+      p.resizeCanvas(w, h);
+      var texW = w + 256;
+      var texH = h + 256;
+      for (var i = 0; i < layers.length; i++) {
+        var scales = [0.008, 0.015, 0.03];
+        var seeds = [1, 2, 3];
+        layers[i].tex = generateNoiseTexture(p, texW, texH, scales[i], seeds[i]);
+      }
+    };
+  };
+
+  new p5(sketch, target);
 })();

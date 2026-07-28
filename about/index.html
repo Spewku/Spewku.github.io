@@ -138,7 +138,9 @@
   </style>
 </head>
 <body>
-  <canvas class="water-bg" id="waterBg"></canvas>
+  <div class="pageloader" id="pageloader"><div class="pageloader-spinner"></div></div>
+
+  <div class="water-bg" id="waterBg"></div>
 
   <nav class="top-nav" id="topNav">
     <a href="/" class="top-nav-logo">
@@ -238,6 +240,8 @@
 
     loadAboutPage();
   </script>
+  <script src="/js/loader.js"></script>
+  <script src="/p5/p5.min.js"></script>
   <script src="/js/water.js"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
 <body>
   <div class="pageloader" id="pageloader"><div class="pageloader-spinner"></div></div>
 
-  <canvas class="water-bg" id="waterBg" data-shader="/shaders/water-pro.glsl"></canvas>
+  <div class="water-bg" id="waterBg"></div>
 
   <nav class="top-nav">
     <a href="/" class="top-nav-logo">
@@ -271,13 +271,9 @@
 
     loadSiteConfig();
     loadGallery();
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const el = document.getElementById('pageloader');
-      el.style.opacity = '0';
-      setTimeout(() => el.remove(), 400);
-    });
   </script>
+  <script src="/js/loader.js"></script>
+  <script src="/p5/p5.min.js"></script>
   <script src="/js/water.js"></script>
 </body>
 </html>

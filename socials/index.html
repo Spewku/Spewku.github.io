@@ -94,7 +94,9 @@
   </style>
 </head>
 <body>
-  <canvas class="water-bg" id="waterBg"></canvas>
+  <div class="pageloader" id="pageloader"><div class="pageloader-spinner"></div></div>
+
+  <div class="water-bg" id="waterBg"></div>
 
   <nav class="top-nav" id="topNav">
     <a href="/" class="top-nav-logo">
@@ -227,7 +229,7 @@
         for (const c of contacts) {
           const a = document.createElement('a');
           a.href = c.url;
-          a.className = 'root-footer-link';
+          a.className = 'root-footer-link-btn';
           a.target = '_blank';
           a.rel = 'noopener noreferrer';
           a.textContent = c.label;
@@ -240,6 +242,8 @@
 
     loadSocialLinks();
   </script>
+  <script src="/js/loader.js"></script>
+  <script src="/p5/p5.min.js"></script>
   <script src="/js/water.js"></script>
 </body>
 </html>
