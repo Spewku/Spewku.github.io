@@ -188,7 +188,7 @@
           const container = document.getElementById('socialsIcons');
           container.innerHTML = '';
           for (const item of sp.icons) {
-            const key = item.name.toLowerCase().replace(/[^a-z]/g, '');
+            const key = keyFromLabel(item.name);
             const svg = svgMap[key] || '';
             const a = document.createElement('a');
             a.href = item.url;
@@ -205,7 +205,7 @@
           const container = document.getElementById('socialsGrid');
           container.innerHTML = '';
           for (const item of sp.grid) {
-            const key = item.name.toLowerCase().replace(/[^a-z]/g, '');
+            const key = keyFromLabel(item.name);
             const svg = svgMap[key] || '';
             const a = document.createElement('a');
             a.href = item.url;

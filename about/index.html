@@ -183,6 +183,15 @@
     </div>
   </div>
 
+  <footer class="root-footer">
+    <h2 class="root-footer-heading">Contact Me</h2>
+    <div class="root-footer-links" id="configFooterLinks">
+      <a href="mailto:spewku.business@gmail.com" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Email</a>
+      <a href="https://www.etsy.com/shop/Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Etsy</a>
+      <a href="https://cash.app/$Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Cash App</a>
+    </div>
+  </footer>
+
   <script>
     function parseBioXml(text) {
       const result = { name: '', bio: '', image: '' };
@@ -232,6 +241,17 @@
         if (site.pfpImage) {
           const navImg = document.querySelector('.nav-pfp-img');
           if (navImg) navImg.src = site.pfpImage;
+        }
+
+        const footerEl = document.getElementById('configFooterLinks');
+        if (footerEl && (cfg.personal || {}).footerContacts) {
+          const footerBtns = footerEl.querySelectorAll('.root-footer-link-btn');
+          cfg.personal.footerContacts.forEach((c, i) => {
+            if (footerBtns[i]) {
+              footerBtns[i].href = c.url;
+              footerBtns[i].textContent = c.label;
+            }
+          });
         }
       } catch (e) {
         console.warn('Could not load siteConfig:', e);

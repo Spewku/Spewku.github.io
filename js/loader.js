@@ -1,27 +1,44 @@
 /**
  * Page transition loader.
- * Shows a dark overlay when navigating via top-nav links,
- * fades it out once the new page DOM is ready.
+ * Shows a dark overlay while the page loads and keeps it up until the
+ * water background has drawn its first frame, so nothing white ever shows.
+ * Fades it out once the new page DOM is ready.
  */
 (function () {
   var loader = document.getElementById('pageloader');
   if (!loader) return;
 
-  function fadeOut() {
-    loader.style.opacity = '0';
-    setTimeout(function () { loader.remove(); }, 400);
-  }
-
   var fromNav = sessionStorage.getItem('navLoading');
   if (fromNav) {
     sessionStorage.removeItem('navLoading');
     loader.style.pointerEvents = 'all';
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(fadeOut, 100);
-    });
-  } else {
-    fadeOut();
   }
+
+  var faded = false;
+  var waterReady = !document.getElementById('waterBg');
+
+  function fadeOut() {
+    if (faded) return;
+    faded = true;
+    loader.style.opacity = '0';
+    setTimeout(function () { loader.remove(); }, 400);
+  }
+
+  function tryFade() {
+    if (waterReady) fadeOut();
+  }
+
+  window.addEventListener('waterready', function () {
+    waterReady = true;
+    tryFade();
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(tryFade, 100);
+  });
+
+  // Safety net: never leave the loader up forever
+  setTimeout(fadeOut, 5000);
 
   // Intercept nav link clicks to trigger loader on next page
   var navLinks = document.querySelectorAll('.top-nav-btn');

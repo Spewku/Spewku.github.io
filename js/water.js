@@ -56,6 +56,7 @@
       ];
 
       p.draw();
+      window.dispatchEvent(new Event('waterready'));
     };
 
     p.draw = function () {
