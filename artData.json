@@ -335,7 +335,7 @@
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Personal Avatar Retexture Practice",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/XJkNdl",
@@ -346,11 +346,12 @@
         "https://cdnb.artstation.com/p/assets/images/images/094/437/611/large/spewku-vrchat-2025-11-22-23-25-57-509-3840x2160.webp?1765406133"
       ],
       "embed": "",
-      "id": "XJkNdl"
+      "id": "XJkNdl",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Retexture 2025",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/XJkNd0",
@@ -361,7 +362,8 @@
         "https://cdna.artstation.com/p/assets/images/images/094/437/560/large/spewku-87.webp?1765406011"
       ],
       "embed": "",
-      "id": "XJkNd0"
+      "id": "XJkNd0",
+      "isAvatar": true
     },
     {
       "type": "personal",
@@ -397,7 +399,7 @@
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/kNJmG2",
@@ -405,11 +407,12 @@
         "https://cdna.artstation.com/p/assets/images/images/094/437/506/large/spewku-80.jpg?1765405935"
       ],
       "embed": "",
-      "id": "kNJmG2"
+      "id": "kNJmG2",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Rexture Commission",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/984Pyv",
@@ -420,11 +423,12 @@
         "https://cdnb.artstation.com/p/assets/images/images/094/437/467/large/spewku-67.webp?1765405839"
       ],
       "embed": "",
-      "id": "984Pyv"
+      "id": "984Pyv",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avater Retexture Commission",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/zx305D",
@@ -434,11 +438,12 @@
         "https://cdnb.artstation.com/p/assets/images/images/094/437/487/large/spewku-69.webp?1765405872"
       ],
       "embed": "",
-      "id": "zx305D"
+      "id": "zx305D",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Personal Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/DLbQ90",
@@ -450,7 +455,8 @@
         "https://cdna.artstation.com/p/assets/images/images/094/437/434/large/spewku-59.webp?1765405781"
       ],
       "embed": "",
-      "id": "DLbQ90"
+      "id": "DLbQ90",
+      "isAvatar": true
     },
     {
       "type": "personal",
@@ -496,7 +502,7 @@
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Retexture Comission 2024",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/P6WgOr",
@@ -507,7 +513,8 @@
         "https://cdnb.artstation.com/p/assets/images/images/094/437/347/large/spewku-45.webp?1765405646"
       ],
       "embed": "",
-      "id": "P6WgOr"
+      "id": "P6WgOr",
+      "isAvatar": true
     },
     {
       "type": "personal",
@@ -578,7 +585,7 @@
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Personal Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/ZlkDP0",
@@ -590,11 +597,12 @@
         "https://cdna.artstation.com/p/assets/images/images/094/437/260/large/spewku-36.webp?1765405428"
       ],
       "embed": "",
-      "id": "ZlkDP0"
+      "id": "ZlkDP0",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Retexture Commission 2024",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/984PBv",
@@ -606,7 +614,8 @@
         "https://cdna.artstation.com/p/assets/images/images/094/437/242/large/spewku-27.jpg?1765405372"
       ],
       "embed": "",
-      "id": "984PBv"
+      "id": "984PBv",
+      "isAvatar": true
     },
     {
       "type": "personal",
@@ -639,7 +648,7 @@
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Retexture Practice",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/y4r2AO",
@@ -650,11 +659,12 @@
         "https://cdnb.artstation.com/p/assets/images/images/094/437/199/large/spewku-25.webp?1765405314"
       ],
       "embed": "",
-      "id": "y4r2AO"
+      "id": "y4r2AO",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Retexture Practice",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/lGkOEY",
@@ -663,11 +673,12 @@
         "https://cdna.artstation.com/p/assets/images/images/094/437/140/large/spewku-10.webp?1765405216"
       ],
       "embed": "",
-      "id": "lGkOEY"
+      "id": "lGkOEY",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/nJkvde",
@@ -675,11 +686,12 @@
         "https://cdnb.artstation.com/p/assets/images/images/094/437/119/large/spewku-9.jpg?1765405543"
       ],
       "embed": "",
-      "id": "nJkvde"
+      "id": "nJkvde",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/4NGP1q",
@@ -687,11 +699,12 @@
         "https://cdnb.artstation.com/p/assets/images/images/094/437/091/large/spewku-8.webp?1765405163"
       ],
       "embed": "",
-      "id": "4NGP1q"
+      "id": "4NGP1q",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Personal Avatar Retexture",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/L4Ngar",
@@ -704,11 +717,12 @@
         "https://cdna.artstation.com/p/assets/images/images/094/436/990/large/spewku-4.webp?1765404983"
       ],
       "embed": "",
-      "id": "L4Ngar"
+      "id": "L4Ngar",
+      "isAvatar": true
     },
     {
       "type": "personal",
-      "is3D": true,
+      "is3D": false,
       "title": "Sleep Token inspired avatar",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/Ov6gvb",
@@ -716,7 +730,8 @@
         "https://cdnb.artstation.com/p/assets/images/images/094/436/933/large/spewku-1.jpg?1765405024"
       ],
       "embed": "",
-      "id": "Ov6gvb"
+      "id": "Ov6gvb",
+      "isAvatar": true
     },
     {
       "type": "personal",
