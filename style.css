@@ -9,7 +9,7 @@
 html {
   width: 100%;
   height: 100%;
-  background-color: #02050e;
+  background-color: #05141f;
 }
 
 body {
@@ -23,24 +23,6 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-}
-
-/* ── water background ── */
-
-.water-bg {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.water-bg canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -610,10 +592,49 @@ body {
 .card-thumb {
   width: 100%;
   aspect-ratio: 16 / 16;
-  background-size: cover;
-  background-position: center;
   background-color: #111;
   position: relative;
+  overflow: hidden;
+}
+
+.card-loader {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-loader::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(9, 144, 247, 0.15);
+  border-top-color: #79fbf7;
+  border-radius: 50%;
+  animation: loaderSpin 0.7s linear infinite;
+}
+
+.card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.card--loaded .card-img {
+  opacity: 1;
+}
+
+.card--loading .card-loader {
+  display: flex;
+}
+
+.card--culled {
+  visibility: hidden;
 }
 
 .card-thumb::after {
@@ -639,6 +660,9 @@ body {
   font-size: 13px;
   font-weight: 500;
   color: rgba(245, 245, 245, 0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ── detail overlay ── */

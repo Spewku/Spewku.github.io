@@ -15,7 +15,8 @@
   }
 
   var faded = false;
-  var waterReady = !document.getElementById('waterBg');
+  var domReady = false;
+  var waterReady = !document.getElementById('water');
 
   function fadeOut() {
     if (faded) return;
@@ -25,7 +26,7 @@
   }
 
   function tryFade() {
-    if (waterReady) fadeOut();
+    if (waterReady && domReady) fadeOut();
   }
 
   window.addEventListener('waterready', function () {
@@ -34,6 +35,7 @@
   });
 
   document.addEventListener('DOMContentLoaded', function () {
+    domReady = true;
     setTimeout(tryFade, 100);
   });
 

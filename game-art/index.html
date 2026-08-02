@@ -5,6 +5,7 @@
   <title>spewku.com — Game Art</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/background/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
 <body>
   <div class="pageloader" id="pageloader"><div class="pageloader-spinner"></div></div>
 
-  <div class="water-bg" id="waterBg"></div>
+  <canvas id="water" data-tint="rgba(121, 251, 247, 0.08)" aria-hidden="true"></canvas>
 
   <nav class="top-nav">
     <a href="/" class="top-nav-logo">
@@ -99,6 +100,7 @@
     </div>
   </dialog>
 
+  <script src="/js/cardLoader.js"></script>
   <script>
     const GALLERY_URL = '/artData.json';
 
@@ -149,18 +151,7 @@
 
     function renderGrid(id, items) {
       const grid = document.getElementById(id);
-      grid.innerHTML = items.map(item => {
-        const thumb = item.thumbnail || item.images[0] || '';
-        const encoded = encodeURIComponent(JSON.stringify(item));
-        return `<div class="card" data-post='${encoded}'>
-          <div class="card-thumb" style="background-image:url('${thumb}')"></div>
-          <span class="card-title">${item.title}</span>
-        </div>`;
-      }).join('');
-
-      grid.querySelectorAll('.card').forEach(el => {
-        el.addEventListener('click', () => openDetail(el.dataset.post));
-      });
+      cardLoader.mount(grid, items, el => openDetail(el.dataset.post));
     }
 
     let currentImages = [];
@@ -293,7 +284,6 @@
     loadGallery();
   </script>
   <script src="/js/loader.js"></script>
-  <script src="/p5/p5.min.js"></script>
-  <script src="/js/water.js"></script>
+  <script type="module" src="/background/main.js"></script>
 </body>
 </html>
