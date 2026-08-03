@@ -2,12 +2,315 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>spewku.com</title>
+  <title>spewku.com — Personal Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content="0;url=/" />
-  <link rel="canonical" href="/" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/background/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <meta content="spewku.com — Personal Portfolio" property="og:title" />
+  <meta content="Spewku's personal artwork portfolio." property="og:description" />
+  <meta content="https://spewku.com/personal/" property="og:url" />
+  <meta content="https://spewku.com/img/icon.png" property="og:image" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="850">
+  <meta property="og:image:height" content="858">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:src" content="https://spewku.com/img/icon.png">
+  <meta content="#0990f7" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-  <p>Redirecting to <a href="/">spewku.com</a>...</p>
+  <div class="pageloader" id="pageloader"><div class="pageloader-spinner"></div></div>
+
+  <canvas id="water" aria-hidden="true"></canvas>
+
+  <nav class="top-nav" id="topNav">
+    <a href="/" class="top-nav-logo">
+      <span>SPEWKU</span>
+      <div class="nav-pfp">
+        <img src="/personal/pfp.png" alt="SPEWKU" class="nav-pfp-img" />
+      </div>
+    </a>
+    <div class="top-nav-links">
+      <a href="/" class="top-nav-btn">Home</a>
+      <a href="/game-art/" class="top-nav-btn top-nav-btn--active">Portfolio</a>
+      <a id="configNavCommission" href="https://spewkuprices.carrd.co/" target="_blank" rel="noopener noreferrer" class="top-nav-btn">Commissions</a>
+      <a href="/about/" class="top-nav-btn">About</a>
+    </div>
+  </nav>
+
+  <div class="root-wrap">
+    <header class="root-header">
+      <a id="configCommissionLink" href="https://spewkuprices.carrd.co/" target="_blank" rel="noopener noreferrer" class="root-link-btn root-link-btn--prominent">COMMISSIONS PRICE SHEET</a>
+      <div class="header-logo-placeholder">
+        <img src="/personal/pfp.png" alt="" class="header-logo-placeholder-img" />
+      </div>
+    </header>
+
+    <div class="root-body">
+      <main class="root-content">
+        <div class="tabs">
+          <div class="tabs-bar">
+            <button class="tab-head tab-head--active" data-tab="tab2d">
+              <span>2D Portfolio</span>
+              <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
+            </button>
+            <button class="tab-head" data-tab="tab3d">
+              <span>3D Portfolio</span>
+              <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
+            </button>
+            <button class="tab-head" data-tab="tabAvatars">
+              <span>Avatars</span>
+              <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
+            </button>
+          </div>
+          <div class="tab-body tab-body--active" id="tab2d">
+            <div class="grid" id="grid2d"></div>
+          </div>
+          <div class="tab-body" id="tab3d">
+            <div class="grid" id="grid3d"></div>
+          </div>
+          <div class="tab-body" id="tabAvatars">
+            <div class="grid" id="gridAvatars"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="root-footer">
+      <h2 class="root-footer-heading">Contact Me</h2>
+      <div class="root-footer-links" id="configFooterLinks">
+        <a href="mailto:spewku.business@gmail.com" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Email</a>
+        <a href="https://www.etsy.com/shop/Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Etsy</a>
+        <a href="https://cash.app/$Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Cash App</a>
+      </div>
+    </footer>
+  </div>
+
+  <dialog class="detail" id="detail">
+    <div class="detail-scroll">
+      <button class="detail-close" id="detailClose" aria-label="Close">&times;</button>
+      <div class="detail-hero-row">
+        <button class="detail-nav detail-nav--prev" id="detailPrev" aria-label="Previous image">&#8249;</button>
+        <div class="detail-hero-wrap">
+          <img class="detail-hero" id="detailHero" alt="" />
+          <div class="detail-counter" id="detailCounter"></div>
+        </div>
+        <button class="detail-nav detail-nav--next" id="detailNext" aria-label="Next image">&#8250;</button>
+      </div>
+      <h2 class="detail-title" id="detailTitle"></h2>
+      <p class="detail-desc" id="detailDesc"></p>
+      <div class="detail-tags" id="detailTags"></div>
+      <div class="detail-carousel" id="detailCarousel"></div>
+      <a class="detail-source" id="detailSource" target="_blank" rel="noopener">View source</a>
+      <div class="detail-embed" id="detailEmbed"></div>
+    </div>
+  </dialog>
+
+  <script src="/js/cardLoader.js"></script>
+  <script>
+    const GALLERY_URL = '/artData.json';
+
+    async function loadSiteConfig() {
+      try {
+        const res = await fetch('/siteConfig.json');
+        const cfg = await res.json();
+        const p = cfg.personal || {};
+        const site = cfg.site || {};
+
+        const commEl = document.getElementById('configCommissionLink');
+        if (commEl && p.commissionLink) {
+          commEl.href = p.commissionLink;
+        }
+
+        const navComm = document.getElementById('configNavCommission');
+        if (navComm && p.commissionLink) {
+          navComm.href = p.commissionLink;
+        }
+
+        const footerEl = document.getElementById('configFooterLinks');
+        if (footerEl && p.footerContacts) {
+          const footerBtns = footerEl.querySelectorAll('.root-footer-link-btn');
+          p.footerContacts.forEach((c, i) => {
+            if (footerBtns[i]) {
+              footerBtns[i].href = c.url;
+              footerBtns[i].textContent = c.label;
+            }
+          });
+        }
+
+        if (site.pfpImage) {
+          const navImg = document.querySelector('.nav-pfp-img');
+          if (navImg) navImg.src = site.pfpImage;
+          const headerImg = document.querySelector('.header-logo-placeholder-img');
+          if (headerImg) headerImg.src = site.pfpImage;
+        }
+      } catch (e) {
+        console.warn('Could not load siteConfig:', e);
+      }
+    }
+
+    async function loadGallery() {
+      try {
+        const res = await fetch(GALLERY_URL);
+        const data = await res.json();
+        const posts = data.artData || [];
+
+        const filtered = posts.filter(p => p.type === 'personal');
+
+        const groups = { 'false': [], 'true': [], 'avatar': [] };
+        for (const post of filtered) {
+          if (post.isAvatar) {
+            groups['avatar'].push(post);
+          } else {
+            groups[String(post.is3D)].push(post);
+          }
+        }
+
+        renderGrid('grid2d', groups['false']);
+        renderGrid('grid3d', groups['true']);
+        renderGrid('gridAvatars', groups['avatar']);
+      } catch (e) {
+        console.error('Failed to load gallery:', e);
+      }
+    }
+
+    function renderGrid(id, items) {
+      const grid = document.getElementById(id);
+      cardLoader.mount(grid, items, el => openDetail(el.dataset.post));
+    }
+
+    let currentImages = [];
+    let currentImageIndex = 0;
+
+    function showImage(index) {
+      if (!currentImages.length) return;
+      if (index < 0) index = currentImages.length - 1;
+      if (index >= currentImages.length) index = 0;
+      currentImageIndex = index;
+
+      const hero = document.getElementById('detailHero');
+      hero.src = currentImages[index];
+      hero.alt = '';
+
+      const counter = document.getElementById('detailCounter');
+      counter.textContent = currentImages.length > 1
+        ? `${index + 1} / ${currentImages.length}`
+        : '';
+
+      const thumbs = document.querySelectorAll('.detail-carousel-img');
+      thumbs.forEach((t, i) => t.classList.toggle('detail-carousel-img--active', i === index));
+
+      document.getElementById('detailPrev').style.display = currentImages.length > 1 ? '' : 'none';
+      document.getElementById('detailNext').style.display = currentImages.length > 1 ? '' : 'none';
+
+      const activeThumb = thumbs[index];
+      if (activeThumb) activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+
+    function openDetail(encoded) {
+      if (!encoded) return;
+      const item = JSON.parse(decodeURIComponent(encoded));
+      const dialog = document.getElementById('detail');
+
+      currentImages = item.images || [];
+      currentImageIndex = 0;
+
+      showImage(0);
+
+      document.getElementById('detailTitle').textContent = item.title;
+      document.getElementById('detailDesc').textContent = item.description;
+
+      const tagsEl = document.getElementById('detailTags');
+      const tags = item.tags || [];
+      if (tags.length) {
+        tagsEl.innerHTML = tags.map(t => `<span class="tag-badge">${t}</span>`).join(' ');
+        tagsEl.style.display = 'block';
+      } else {
+        tagsEl.style.display = 'none';
+      }
+
+      const carousel = document.getElementById('detailCarousel');
+      carousel.innerHTML = currentImages.map((src, i) =>
+        `<img src="${src}" alt="" class="detail-carousel-img" data-index="${i}" />`
+      ).join('');
+
+      carousel.querySelectorAll('.detail-carousel-img').forEach(el => {
+        el.addEventListener('click', () => showImage(Number(el.dataset.index)));
+      });
+
+      const source = document.getElementById('detailSource');
+      if (item.sourceLink) {
+        source.href = item.sourceLink;
+        source.style.display = 'inline-block';
+      } else {
+        source.style.display = 'none';
+      }
+
+      const embedDiv = document.getElementById('detailEmbed');
+      if (item.embed) {
+        embedDiv.innerHTML = item.embed;
+        embedDiv.style.display = 'block';
+      } else {
+        embedDiv.style.display = 'none';
+      }
+
+      dialog.showModal();
+      document.body.style.overflow = 'hidden';
+    }
+
+    document.getElementById('detailClose').addEventListener('click', () => {
+      document.getElementById('detail').close();
+      document.body.style.overflow = '';
+    });
+
+    document.getElementById('detail').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) {
+        document.getElementById('detail').close();
+        document.body.style.overflow = '';
+      }
+    });
+
+    document.getElementById('detailPrev').addEventListener('click', () => showImage(currentImageIndex - 1));
+    document.getElementById('detailNext').addEventListener('click', () => showImage(currentImageIndex + 1));
+
+    document.getElementById('detail').addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { showImage(currentImageIndex - 1); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { showImage(currentImageIndex + 1); e.preventDefault(); }
+    });
+
+    let activeTab = 'tab2d';
+    document.querySelectorAll('.tab-head').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+        if (tab === activeTab) {
+          document.querySelectorAll('.tab-head').forEach(b => b.classList.remove('tab-head--active'));
+          document.querySelectorAll('.tab-body').forEach(b => b.classList.remove('tab-body--active'));
+          activeTab = null;
+        } else {
+          document.querySelectorAll('.tab-head').forEach(b => b.classList.remove('tab-head--active'));
+          document.querySelectorAll('.tab-body').forEach(b => b.classList.remove('tab-body--active'));
+          btn.classList.add('tab-head--active');
+          document.getElementById(tab).classList.add('tab-body--active');
+          activeTab = tab;
+        }
+      });
+    });
+
+    const tabsBar = document.querySelector('.tabs-bar');
+    const topNav = document.querySelector('.top-nav');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      const navH = topNav.offsetHeight;
+      const stuck = tabsBar.getBoundingClientRect().top <= navH;
+      tabsBar.classList.toggle('tabs-bar--stuck', stuck);
+    }, { passive: true });
+
+    loadSiteConfig();
+    loadGallery();
+  </script>
+  <script src="/js/loader.js"></script>
+  <script type="module" src="/background/main.js"></script>
 </body>
 </html>

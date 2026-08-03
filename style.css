@@ -449,13 +449,14 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 4px;
+  width: 100%;
 }
 
 .commission-wrap {
   width: 100%;
   max-width: 560px;
-  max-height: 400px;
-  aspect-ratio: 1 / 1;
+  height: min(400px, 60vh);
+  min-height: 280px;
   overflow: hidden;
   border-radius: 12px;
   border: 1px solid rgba(9, 144, 247, 0.08);

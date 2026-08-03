@@ -4,8 +4,8 @@ const ctx = canvas.getContext("2d");
 const SRC = "/background/water.jpg";
 const TINT = canvas.dataset.tint || null;
 
-const SPEED = 30;
-const MAX_TILT = (25 * Math.PI) / 180;
+const SPEED = 10;
+const MAX_TILT = (5 * Math.PI) / 180;
 const PERIOD = 16;
 const V_BUFFER = 1.15;
 const CROP = 1;
