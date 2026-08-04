@@ -1,7 +1,7 @@
 {
   "artData": [
     {
-      "type": "false",
+      "type": "personal",
       "is3D": false,
       "title": "Personal Experimental Art",
       "description": "",
@@ -1450,9 +1450,11 @@
       "title": "Art Fight 2026 Attack 10",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/o0A8m4",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/101/266/780/20260802013535/smaller_square/spewku-ma5.jpg?1785652535"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/101/266/780/20260802013535/smaller_square/spewku-ma5.jpg?1785652535",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1464,9 +1466,11 @@
       "title": "Art Fight 2026 Attack 9",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/rzAP46",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/101/266/742/smaller_square/spewku-ma2.jpg?1785652384"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/101/266/742/smaller_square/spewku-ma2.jpg?1785652384",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1478,9 +1482,11 @@
       "title": "Art Fight 2026 Attack 8",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/V8g3QX",
-      "images": [],
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/101/266/707/smaller_square/spewku-ma8.jpg?1785652230"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/101/266/707/smaller_square/spewku-ma8.jpg?1785652230",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1492,9 +1498,11 @@
       "title": "Art Fight 2026 Attack 7",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/0anLmK",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/101/266/696/smaller_square/spewku-ma3.jpg?1785652120"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/101/266/696/smaller_square/spewku-ma3.jpg?1785652120",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1506,9 +1514,11 @@
       "title": "Art Fight 2026 Attack 6",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/QxrNYB",
-      "images": [],
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/101/266/605/20260802012615/smaller_square/spewku-af-5.jpg?1785651976"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/101/266/605/20260802012615/smaller_square/spewku-af-5.jpg?1785651976",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1520,9 +1530,11 @@
       "title": "Art Fight 2026 Attack 5",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/DY5OVO",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/101/266/588/smaller_square/spewku-af-6.jpg?1785651733"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/101/266/588/smaller_square/spewku-af-6.jpg?1785651733",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1534,9 +1546,11 @@
       "title": "Art Fight 2026 Attack 4",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/yAkRlK",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/101/266/572/smaller_square/spewku-af-4.jpg?1785651570"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/101/266/572/smaller_square/spewku-af-4.jpg?1785651570",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1548,9 +1562,11 @@
       "title": "Art Fight 2026 Attack 3",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/b0Kbng",
-      "images": [],
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/101/266/551/smaller_square/spewku-af3.jpg?1785651403"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/101/266/551/smaller_square/spewku-af3.jpg?1785651403",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1562,9 +1578,11 @@
       "title": "Art Fight 2026 Attack 2",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/8veODw",
-      "images": [],
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/101/266/533/smaller_square/spewku-af2.jpg?1785651247"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/101/266/533/smaller_square/spewku-af2.jpg?1785651247",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1576,9 +1594,11 @@
       "title": "Art Fight 2026 Attack 1",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/418deY",
-      "images": [],
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/101/266/495/smaller_square/spewku-af1.jpg?1785650848"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/101/266/495/smaller_square/spewku-af1.jpg?1785650848",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1588,11 +1608,13 @@
       "type": "personal",
       "is3D": false,
       "title": "3D Modeling 2 Final",
-      "description": "",
+      "description": "Gargoyle Final Assignment for 3D modeling 2, now using skills in zbrush. Was modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager, Substance painter, and Zbrush",
       "sourceLink": "https://www.artstation.com/artwork/La539K",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/100/027/968/smaller_square/spewku-st1.jpg?1781661290"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/100/027/968/smaller_square/spewku-st1.jpg?1781661290",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1604,9 +1626,11 @@
       "title": "Commission June 2026",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/2BPzvJ",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/099/725/400/smaller_square/spewku-bossthumbnail.jpg?1780807318"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/099/725/400/smaller_square/spewku-bossthumbnail.jpg?1780807318",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1618,9 +1642,11 @@
       "title": "Commission June 2026",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/WX4kEE",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/099/725/328/20260606233842/smaller_square/spewku-crowcom.jpg?1780807122"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/099/725/328/20260606233842/smaller_square/spewku-crowcom.jpg?1780807122",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
@@ -1632,9 +1658,11 @@
       "title": "Commission May 2026",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/P6zZWZ",
-      "images": [],
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/099/725/268/20260606233543/smaller_square/spewku-404com.jpg?1780806944"
+      ],
       "embed": "",
-      "thumbnail": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/099/725/268/20260606233543/smaller_square/spewku-404com.jpg?1780806944",
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
