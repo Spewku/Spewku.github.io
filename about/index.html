@@ -24,7 +24,7 @@
     .about-page {
       width: 100%;
       max-width: 1000px;
-      padding: 90px 24px 40px;
+      padding: 24px 24px 40px;
     }
     .about-columns {
       display: flex;
@@ -39,7 +39,7 @@
       width: 100%;
       border-radius: 16px;
       object-fit: cover;
-      border: 2px solid rgba(121, 251, 247, 0.15);
+      border: 2px solid rgba(200, 244, 255, 0.15);
       background: #0a0a12;
     }
     .about-text-col {
@@ -51,8 +51,8 @@
       font-size: 42px;
       font-weight: 600;
       letter-spacing: 0.03em;
-      color: #79fbf7;
-      text-shadow: 0 0 24px rgba(121, 251, 247, 0.3);
+      color: #c9f4ff;
+      text-shadow: 0 0 24px rgba(200, 244, 255, 0.3);
       line-height: 1;
       margin-bottom: 20px;
     }
@@ -60,7 +60,7 @@
       font-family: 'Source Serif 4', Georgia, serif;
       font-size: 17px;
       line-height: 1.75;
-      color: rgba(121, 251, 247, 0.8);
+      color: rgba(200, 244, 255, 0.8);
       margin-bottom: 28px;
       overflow-wrap: break-word;
       word-wrap: break-word;
@@ -80,7 +80,7 @@
     }
     .about-bio h1, .about-bio h2, .about-bio h3 {
       font-family: 'Oswald', system-ui, sans-serif;
-      color: #79fbf7;
+      color: #c9f4ff;
       margin: 16px 0 8px;
     }
     .about-bio h1 { font-size: 28px; }
@@ -90,10 +90,10 @@
       margin-bottom: 12px;
     }
     .about-bio strong {
-      color: #79fbf7;
+      color: #c9f4ff;
     }
     .about-bio a {
-      color: #79fbf7;
+      color: #c9f4ff;
       text-decoration: underline;
       text-underline-offset: 2px;
     }
@@ -144,17 +144,16 @@
   <canvas id="water" aria-hidden="true"></canvas>
 
   <nav class="top-nav" id="topNav">
-    <a href="/" class="top-nav-logo">
+    <a href="/home/" class="top-nav-logo">
       <span>SPEWKU</span>
       <div class="nav-pfp">
         <img src="/personal/pfp.png" alt="SPEWKU" class="nav-pfp-img" />
       </div>
     </a>
     <div class="top-nav-links">
-      <a href="/" class="top-nav-btn">Home</a>
-      <a href="/game-art/" class="top-nav-btn">Portfolio</a>
-      <a id="configNavCommission" href="https://spewkuprices.carrd.co/" target="_blank" rel="noopener noreferrer" class="top-nav-btn">Commissions</a>
-      <a href="/about/" class="top-nav-btn top-nav-btn--active">About</a>
+      <a href="/personal/" class="top-nav-btn">Personal</a>
+      <a href="/game-art/" class="top-nav-btn">Game Art</a>
+      <a href="/about/" class="top-nav-btn top-nav-btn--active">About Me</a>
     </div>
   </nav>
 
@@ -182,16 +181,16 @@
         </div> -->
       </div>
     </div>
-  </div>
 
-  <footer class="root-footer">
-    <h2 class="root-footer-heading">Contact Me</h2>
-    <div class="root-footer-links" id="configFooterLinks">
-      <a href="mailto:spewku.business@gmail.com" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Email</a>
-      <a href="https://www.etsy.com/shop/Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Etsy</a>
-      <a href="https://cash.app/$Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Cash App</a>
-    </div>
-  </footer>
+    <footer class="root-footer">
+      <h2 class="root-footer-heading">Contact Me</h2>
+      <div class="root-footer-links" id="configFooterLinks">
+        <a href="mailto:spewku.business@gmail.com" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Email</a>
+        <a href="https://www.etsy.com/shop/Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Etsy</a>
+        <a href="https://cash.app/$Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Cash App</a>
+      </div>
+    </footer>
+  </div>
 
   <script>
     function parseBioXml(text) {
@@ -242,11 +241,6 @@
         if (site.pfpImage) {
           const navImg = document.querySelector('.nav-pfp-img');
           if (navImg) navImg.src = site.pfpImage;
-        }
-
-        const navComm = document.getElementById('configNavCommission');
-        if (navComm && (cfg.personal || {}).commissionLink) {
-          navComm.href = cfg.personal.commissionLink;
         }
 
         const footerEl = document.getElementById('configFooterLinks');

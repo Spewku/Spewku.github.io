@@ -26,23 +26,23 @@
   <canvas id="water" aria-hidden="true"></canvas>
 
   <nav class="top-nav" id="topNav">
-    <a href="/" class="top-nav-logo">
+    <a href="/home/" class="top-nav-logo">
       <span>SPEWKU</span>
       <div class="nav-pfp">
         <img src="/personal/pfp.png" alt="SPEWKU" class="nav-pfp-img" />
       </div>
     </a>
     <div class="top-nav-links">
-      <a href="/" class="top-nav-btn">Home</a>
-      <a href="/game-art/" class="top-nav-btn top-nav-btn--active">Portfolio</a>
-      <a id="configNavCommission" href="https://spewkuprices.carrd.co/" target="_blank" rel="noopener noreferrer" class="top-nav-btn">Commissions</a>
-      <a href="/about/" class="top-nav-btn">About</a>
+      <a href="/about/" class="top-nav-btn">About Me</a>
+      <a href="/home/" class="top-nav-btn">Socials</a>
+      <a href="/personal/" class="top-nav-btn top-nav-btn--active">Personal Portfolio</a>
     </div>
   </nav>
 
   <div class="root-wrap">
     <header class="root-header">
       <a id="configCommissionLink" href="https://spewkuprices.carrd.co/" target="_blank" rel="noopener noreferrer" class="root-link-btn root-link-btn--prominent">COMMISSIONS PRICE SHEET</a>
+      <a href="/game-art/" class="root-link-btn root-link-btn--prominent">GAME ART PORTFOLIO</a>
       <div class="header-logo-placeholder">
         <img src="/personal/pfp.png" alt="" class="header-logo-placeholder-img" />
       </div>
@@ -122,11 +122,6 @@
         const commEl = document.getElementById('configCommissionLink');
         if (commEl && p.commissionLink) {
           commEl.href = p.commissionLink;
-        }
-
-        const navComm = document.getElementById('configNavCommission');
-        if (navComm && p.commissionLink) {
-          navComm.href = p.commissionLink;
         }
 
         const footerEl = document.getElementById('configFooterLinks');
