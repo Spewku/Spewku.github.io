@@ -249,7 +249,7 @@ body {
   margin: 72px 0 48px;
   background: rgba(0, 30, 74, 0.8);
   border: 1px solid rgba(200, 244, 255, 0.12);
-  border-radius: 18px;
+  border-radius: 25px;
   box-shadow: 0 10px 44px rgba(0, 0, 0, 0.5);
 }
 
@@ -906,7 +906,7 @@ body {
   }
 
   .top-nav-logo span {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .nav-pfp {
@@ -915,12 +915,12 @@ body {
   }
 
   .top-nav-links {
-    gap: 2px;
+    gap: 0;
   }
 
   .top-nav-btn {
-    padding: 5px 8px;
-    font-size: 12px;
+    padding: 5px 6px;
+    font-size: 11px;
   }
 
   .root-header {

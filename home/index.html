@@ -146,7 +146,10 @@
       </div>
     </a>
     <div class="top-nav-links">
-      <a href="/personal/" class="top-nav-btn">Personal</a>
+      <a href="/about/" class="top-nav-btn">About Me</a>
+      <a href="/personal/" class="top-nav-btn">Portfolio</a>
+      <a href="/home/" class="top-nav-btn top-nav-btn--active">Socials</a>
+      <a id="configNavCommission" href="https://spewkuprices.carrd.co/" target="_blank" rel="noopener noreferrer" class="top-nav-btn">Prices</a>
       <a href="/game-art/" class="top-nav-btn">Game Art</a>
     </div>
   </nav>
@@ -230,6 +233,8 @@
         }
 
         if (p.commissionLink) {
+          const navComm = document.getElementById('configNavCommission');
+          if (navComm) navComm.href = p.commissionLink;
           const sheetBtn = document.getElementById('configCommissionSheet');
           if (sheetBtn) sheetBtn.href = p.commissionLink;
         }

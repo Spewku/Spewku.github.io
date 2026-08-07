@@ -151,9 +151,11 @@
       </div>
     </a>
     <div class="top-nav-links">
-      <a href="/personal/" class="top-nav-btn">Personal</a>
-      <a href="/game-art/" class="top-nav-btn">Game Art</a>
       <a href="/about/" class="top-nav-btn top-nav-btn--active">About Me</a>
+      <a href="/personal/" class="top-nav-btn">Portfolio</a>
+      <a href="/home/" class="top-nav-btn">Socials</a>
+      <a id="configNavCommission" href="https://spewkuprices.carrd.co/" target="_blank" rel="noopener noreferrer" class="top-nav-btn">Prices</a>
+      <a href="/game-art/" class="top-nav-btn">Game Art</a>
     </div>
   </nav>
 
@@ -241,6 +243,11 @@
         if (site.pfpImage) {
           const navImg = document.querySelector('.nav-pfp-img');
           if (navImg) navImg.src = site.pfpImage;
+        }
+
+        const navComm = document.getElementById('configNavCommission');
+        if (navComm && (cfg.personal || {}).commissionLink) {
+          navComm.href = cfg.personal.commissionLink;
         }
 
         const footerEl = document.getElementById('configFooterLinks');
