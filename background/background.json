@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "duration": 12,
+  "fps": 30,
+  "loop": true,
+  "color": "#05141f",
+  "layers": [
+    {
+      "id": "l29eyc9",
+      "name": "3ce86681-37c1-41e5-b3bd-9300d4bc6584",
+      "file": "image-1.jpg",
+      "visible": true,
+      "tracks": {
+        "x": [
+          {
+            "t": 0,
+            "v": 0
+          }
+        ],
+        "y": [
+          {
+            "t": 0,
+            "v": 0
+          }
+        ],
+        "scale": [
+          {
+            "t": 0,
+            "v": 100
+          }
+        ],
+        "rot": [
+          {
+            "t": 0,
+            "v": 0
+          }
+        ],
+        "op": [
+          {
+            "t": 0,
+            "v": 100
+          }
+        ]
+      }
+    }
+  ]
+}
