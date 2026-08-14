@@ -96,6 +96,9 @@
         <button class="detail-nav detail-nav--prev" id="detailPrev" aria-label="Previous image">&#8249;</button>
         <div class="detail-hero-wrap">
           <img class="detail-hero" id="detailHero" alt="" />
+          <button class="detail-hero-zoom-btn" id="detailZoomBtn" aria-label="Zoom image" title="Zoom">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </button>
           <div class="detail-counter" id="detailCounter"></div>
         </div>
         <button class="detail-nav detail-nav--next" id="detailNext" aria-label="Next image">&#8250;</button>
@@ -106,6 +109,15 @@
       <div class="detail-carousel" id="detailCarousel"></div>
       <a class="detail-source" id="detailSource" target="_blank" rel="noopener">View source</a>
       <div class="detail-embed" id="detailEmbed"></div>
+    </div>
+
+    <div class="detail-zoom" id="detailZoom" hidden>
+      <div class="detail-zoom-stage" id="detailZoomStage">
+        <img class="detail-zoom-img" id="detailZoomImg" alt="" draggable="false" />
+      </div>
+      <div class="detail-zoom-counter" id="detailZoomCounter"></div>
+      <button class="detail-zoom-close" id="detailZoomClose" aria-label="Close zoom">&times;</button>
+      <div class="detail-zoom-hint">Wheel to zoom &middot; drag to pan</div>
     </div>
   </dialog>
 
@@ -208,6 +220,18 @@
 
       const activeThumb = thumbs[index];
       if (activeThumb) activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+      const zoomEl = document.getElementById('detailZoom');
+      if (zoomEl && !zoomEl.hidden) {
+        const zoomImg = document.getElementById('detailZoomImg');
+        if (zoomImg) zoomImg.src = currentImages[index];
+        const zoomCounter = document.getElementById('detailZoomCounter');
+        if (zoomCounter) {
+          zoomCounter.textContent = currentImages.length > 1
+            ? `${index + 1} / ${currentImages.length}`
+            : '';
+        }
+      }
     }
 
     function openDetail(encoded) {
@@ -279,6 +303,150 @@
     document.getElementById('detail').addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft') { showImage(currentImageIndex - 1); e.preventDefault(); }
       if (e.key === 'ArrowRight') { showImage(currentImageIndex + 1); e.preventDefault(); }
+    });
+
+    const zoomEl = document.getElementById('detailZoom');
+    const zoomStage = document.getElementById('detailZoomStage');
+    const zoomImg = document.getElementById('detailZoomImg');
+    const zoomCounter = document.getElementById('detailZoomCounter');
+
+    let zoomScale = 1;
+    let zoomOffsetX = 0;
+    let zoomOffsetY = 0;
+    let zoomDragging = false;
+    let zoomStartX = 0;
+    let zoomStartY = 0;
+    let zoomDragStartOffsetX = 0;
+    let zoomDragStartOffsetY = 0;
+
+    function zoomIsZoomed() {
+      return zoomScale > 1.001;
+    }
+
+    function zoomClamp() {
+      const sw = zoomStage.clientWidth;
+      const sh = zoomStage.clientHeight;
+      const iw = zoomImg.naturalWidth * zoomScale;
+      const ih = zoomImg.naturalHeight * zoomScale;
+      zoomOffsetX = Math.max(Math.min(zoomOffsetX, sw), -iw + sw * 0.2);
+      zoomOffsetY = Math.max(Math.min(zoomOffsetY, sh), -ih + sh * 0.2);
+    }
+
+    function zoomCenter() {
+      zoomOffsetX = (zoomStage.clientWidth - zoomImg.naturalWidth) / 2;
+      zoomOffsetY = (zoomStage.clientHeight - zoomImg.naturalHeight) / 2;
+    }
+
+    function zoomSetTransform() {
+      zoomClamp();
+      zoomImg.style.transform = `translate(${zoomOffsetX}px, ${zoomOffsetY}px) scale(${zoomScale})`;
+      zoomStage.classList.toggle('zooming', !zoomIsZoomed());
+    }
+
+    function zoomResetView() {
+      zoomScale = 1;
+      zoomCenter();
+      zoomSetTransform();
+    }
+
+    function openZoom() {
+      if (!currentImages.length) return;
+      zoomImg.src = currentImages[currentImageIndex];
+      zoomCounter.textContent = currentImages.length > 1
+        ? `${currentImageIndex + 1} / ${currentImages.length}`
+        : '';
+      zoomScale = 1;
+      zoomOffsetX = 0;
+      zoomOffsetY = 0;
+      zoomEl.hidden = false;
+      document.body.style.overflow = 'hidden';
+      if (zoomImg.complete) {
+        zoomCenter();
+        zoomSetTransform();
+      } else {
+        zoomImg.onload = () => {
+          zoomCenter();
+          zoomSetTransform();
+        };
+      }
+    }
+
+    function closeZoom() {
+      zoomEl.hidden = true;
+      zoomImg.removeAttribute('src');
+    }
+
+    document.getElementById('detailZoomBtn').addEventListener('click', openZoom);
+
+    document.getElementById('detailZoomClose').addEventListener('click', closeZoom);
+
+    zoomEl.addEventListener('click', (e) => {
+      if (e.target === zoomEl) closeZoom();
+    });
+
+    zoomStage.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const rect = zoomStage.getBoundingClientRect();
+      const px = e.clientX - rect.left;
+      const py = e.clientY - rect.top;
+      const factor = e.deltaY < 0 ? 1.2 : 1 / 1.2;
+      const next = Math.min(8, Math.max(1, zoomScale * factor));
+      if (next === zoomScale) return;
+      const ratio = next / zoomScale;
+      zoomOffsetX = px - (px - zoomOffsetX) * ratio;
+      zoomOffsetY = py - (py - zoomOffsetY) * ratio;
+      zoomScale = next;
+      zoomSetTransform();
+    }, { passive: false });
+
+    zoomStage.addEventListener('pointerdown', (e) => {
+      if (!zoomIsZoomed()) return;
+      zoomDragging = true;
+      zoomStartX = e.clientX;
+      zoomStartY = e.clientY;
+      zoomDragStartOffsetX = zoomOffsetX;
+      zoomDragStartOffsetY = zoomOffsetY;
+      zoomStage.setPointerCapture(e.pointerId);
+    });
+
+    zoomStage.addEventListener('pointermove', (e) => {
+      if (!zoomDragging) return;
+      zoomOffsetX = zoomDragStartOffsetX + (e.clientX - zoomStartX);
+      zoomOffsetY = zoomDragStartOffsetY + (e.clientY - zoomStartY);
+      zoomSetTransform();
+    });
+
+    zoomStage.addEventListener('pointerup', (e) => {
+      if (!zoomDragging) return;
+      zoomDragging = false;
+      if (zoomStage.hasPointerCapture(e.pointerId)) {
+        zoomStage.releasePointerCapture(e.pointerId);
+      }
+    });
+
+    zoomStage.addEventListener('dblclick', (e) => {
+      const rect = zoomStage.getBoundingClientRect();
+      const px = e.clientX - rect.left;
+      const py = e.clientY - rect.top;
+      if (zoomIsZoomed()) {
+        zoomResetView();
+      } else {
+        zoomScale = 2;
+        zoomOffsetX = px - (px - zoomOffsetX) * 2;
+        zoomOffsetY = py - (py - zoomOffsetY) * 2;
+        zoomSetTransform();
+      }
+    });
+
+    const zoomDialog = document.getElementById('detail');
+    zoomDialog.addEventListener('cancel', (e) => {
+      if (!zoomEl.hidden) {
+        e.preventDefault();
+        closeZoom();
+      }
+    });
+    zoomDialog.addEventListener('close', () => {
+      document.body.style.overflow = '';
     });
 
     let activeTab = 'tab2d';
