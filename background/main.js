@@ -1,105 +1,97 @@
 const canvas = document.getElementById("water");
+if (!canvas) throw new Error("water canvas missing");
 const ctx = canvas.getContext("2d");
-
-const SRC = "/background/water.jpg";
-const TINT = canvas.dataset.tint || null;
-
-const SPEED = 10;
-const MAX_TILT = (5 * Math.PI) / 180;
-const PERIOD = 16;
-const V_BUFFER = 1.15;
-const CROP = 1;
-
-let img = new Image();
-img.src = SRC;
-
+const dpr = Math.min(window.devicePixelRatio || 1, 2);
 let width = 0;
 let height = 0;
-let dpr = 1;
-let tile = 0;
-let offsetX = 0;
+let config = null;
+let images = [];
 let start = 0;
 let last = 0;
 let readySent = false;
 
 function resize() {
-  dpr = Math.min(window.devicePixelRatio || 1, 2);
   width = window.innerWidth * dpr;
   height = window.innerHeight * dpr;
   canvas.width = width;
   canvas.height = height;
-  tile = height * V_BUFFER;
 }
-
 window.addEventListener("resize", resize);
+
+function valueAt(kf, t) {
+  if (!kf || !kf.length) return undefined;
+  if (kf.length === 1) return kf[0].v;
+  if (t <= kf[0].t) return kf[0].v;
+  const n = kf.length - 1;
+  if (t >= kf[n].t) return kf[n].v;
+  for (let i = 0; i < n; i++) {
+    const a = kf[i], b = kf[i + 1];
+    if (t >= a.t && t <= b.t) {
+      const p = (t - a.t) / Math.max(b.t - a.t, 0.0001);
+      return a.v + (b.v - a.v) * p;
+    }
+  }
+  return kf[n].v;
+}
 
 function frame(ts) {
   requestAnimationFrame(frame);
-  if (!img.complete || img.naturalWidth === 0) return;
-
+  if (!config) return;
   if (!start) start = ts;
   if (!last) last = ts;
   const dt = Math.min((ts - last) / 1000, 0.05);
   last = ts;
-
   const elapsed = (ts - start) / 1000;
-  const angle = MAX_TILT * Math.sin((elapsed / PERIOD) * 2 * Math.PI);
-  offsetX = (offsetX + SPEED * dpr * dt) % tile;
-
-  const c = Math.cos(angle);
-  const s = Math.sin(angle);
-
-  ctx.fillStyle = "#05141f";
+  const dur = Math.max(config.duration || 10, 0.1);
+  const t = config.loop === false ? Math.min(elapsed, dur) : elapsed % dur;
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.fillStyle = config.color || "#000000";
   ctx.fillRect(0, 0, width, height);
-
-  const hw = width / 2;
-  const hh = height / 2;
-
-  let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-  for (const [dx, dy] of [[-hw, -hh], [hw, -hh], [-hw, hh], [hw, hh]]) {
-    const rx = dx * c + dy * s;
-    const ry = -dx * s + dy * c;
-    if (rx < minX) minX = rx;
-    if (rx > maxX) maxX = rx;
-    if (ry < minY) minY = ry;
-    if (ry > maxY) maxY = ry;
+  const layers = config.layers || [];
+  for (let li = 0; li < layers.length; li++) {
+    const L = layers[li];
+    const img = images[li];
+    if (L.visible === false || !img || !img.naturalWidth) continue;
+    const tracks = L.tracks || {};
+    const sx = tracks.x ? (valueAt(tracks.x, t) || 0) : 0;
+    const sy = tracks.y ? (valueAt(tracks.y, t) || 0) : 0;
+    const sc = (tracks.scale ? (valueAt(tracks.scale, t) || 100) : 100) / 100;
+    const rot = ((tracks.rot ? (valueAt(tracks.rot, t) || 0) : 0) * Math.PI) / 180;
+    const op = (tracks.op ? valueAt(tracks.op, t) : 100) ?? 100;
+    const cover = Math.max(width / img.naturalWidth, height / img.naturalHeight);
+    const dw = img.naturalWidth * cover * sc;
+    const dh = img.naturalHeight * cover * sc;
+    ctx.save();
+    ctx.translate(width / 2 + (sx / 100) * width, height / 2 + (sy / 100) * height);
+    ctx.rotate(rot);
+    ctx.globalAlpha = Math.max(0, Math.min(1, op / 100));
+    ctx.drawImage(img, -dw / 2, -dh / 2, dw, dh);
+    ctx.restore();
   }
-
-  const sw = img.naturalWidth - CROP * 2;
-  const sh = img.naturalHeight - CROP * 2;
-
-  const j0 = Math.floor((minX + offsetX) / tile) - 1;
-  const j1 = Math.ceil((maxX + offsetX) / tile) + 1;
-  const i0 = Math.floor(minY / tile) - 1;
-  const i1 = Math.ceil(maxY / tile) + 1;
-
-  ctx.save();
-  ctx.translate(hw, hh);
-  ctx.rotate(angle);
-  for (let i = i0; i <= i1; i++) {
-    for (let j = j0; j <= j1; j++) {
-      const x = j * tile - offsetX;
-      const y = i * tile;
-      ctx.drawImage(img, CROP, CROP, sw, sh, x - tile / 2, y - tile / 2, tile, tile);
-    }
-  }
-  ctx.restore();
-
-  if (TINT) {
-    ctx.globalCompositeOperation = "source-over";
-    ctx.fillStyle = TINT;
-    ctx.fillRect(0, 0, width, height);
-  }
-
+  ctx.globalAlpha = 1;
   if (!readySent) {
     readySent = true;
     window.dispatchEvent(new Event("waterready"));
   }
 }
 
-img.onload = () => {
+async function load() {
+  try {
+    const res = await fetch(new URL("background.json", import.meta.url));
+    config = await res.json();
+  } catch (e) {
+    config = { color: "#000000", layers: [] };
+  }
+  const layers = config.layers || [];
+  images = new Array(layers.length);
+  await Promise.all(layers.map((L, i) => new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => { images[i] = img; resolve(); };
+    img.onerror = () => resolve();
+    img.src = new URL(L.file, import.meta.url).href;
+  })));
   resize();
   requestAnimationFrame(frame);
-};
+}
 
-resize();
+load();
