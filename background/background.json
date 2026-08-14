@@ -2,7 +2,7 @@
   "version": 1,
   "duration": 12,
   "fps": 30,
-  "loop": true,
+  "loop": false,
   "color": "#05141f",
   "layers": [
     {
