@@ -1198,3 +1198,42 @@ body {
     justify-content: center;
   }
 }
+
+/* ═══════════════════════════════════════════════════
+   Hover float-glow (buttons + loaded cards) — perf experiment
+   ═══════════════════════════════════════════════════ */
+
+@keyframes ui-float-glow {
+  0%, 100% {
+    transform: translateY(-1px) rotate(-1deg) scale(1.05);
+  }
+  50% {
+    transform: translateY(-5px) rotate(1deg) scale(1.05);
+  }
+}
+
+.top-nav-btn,
+.home-link-btn,
+.social-card,
+.root-link-btn,
+.root-footer-link-btn,
+.social-link,
+.card.card--loaded {
+  transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.3s ease;
+}
+
+.top-nav-btn:hover,
+.home-link-btn:hover,
+.social-card:hover,
+.root-link-btn:hover,
+.root-footer-link-btn:hover,
+.social-link:hover,
+.card.card--loaded:hover {
+  animation: ui-float-glow 1.6s ease-in-out infinite;
+  box-shadow: 0 0 26px rgba(9, 144, 247, 0.5), 0 12px 30px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.card.card--loaded:hover {
+  border-color: rgba(9, 144, 247, 0.3);
+}
