@@ -76,11 +76,21 @@ function frame(ts) {
 }
 
 async function load() {
+  const bgPath = document.body.dataset.background || "background.json";
   try {
-    const res = await fetch(new URL("background.json", import.meta.url));
+    const res = await fetch(new URL(bgPath, import.meta.url));
     config = await res.json();
   } catch (e) {
-    config = { color: "#000000", layers: [] };
+    if (bgPath !== "background.json") {
+      try {
+        const res = await fetch(new URL("background.json", import.meta.url));
+        config = await res.json();
+      } catch (e2) {
+        config = { color: "#000000", layers: [] };
+      }
+    } else {
+      config = { color: "#000000", layers: [] };
+    }
   }
   const layers = config.layers || [];
   images = new Array(layers.length);
