@@ -152,6 +152,19 @@ body {
 
 /* ── header ── */
 
+.root-header-logo {
+  display: flex;
+  justify-content: center;
+  padding: 28px 24px 4px;
+}
+
+.root-header-logo-img {
+  width: clamp(220px, 24vw, 420px);
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .root-header {
   width: 100%;
   padding: 16px 24px 16px;
@@ -976,7 +989,7 @@ body {
 }
 
 .about-name-image {
-  --name-overlap: calc(clamp(200px, 26vw, 400px) * -0.140625);
+  --name-overlap: calc(clamp(200px, 26vw, 400px) * -0.0416667);
   display: block;
   width: clamp(200px, 26vw, 400px);
   height: auto;
