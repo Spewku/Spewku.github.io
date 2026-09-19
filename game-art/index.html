@@ -37,30 +37,30 @@
   </nav>
 
   <div class="root-wrap">
+    <div class="root-header-logo">
+      <img src="/img/spewku_name_logo.png" alt="SPEWKU" class="root-header-logo-img" />
+    </div>
     <header class="root-header">
-      <div class="header-logo-placeholder">
-        <img src="/personal/pfp.png" alt="" class="header-logo-placeholder-img" />
-      </div>
     </header>
 
     <div class="root-body">
       <main class="root-content">
         <div class="tabs">
           <div class="tabs-bar">
-            <button class="tab-head tab-head--active" data-tab="tabPro2d">
-              <span>2D Portfolio</span>
-              <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
-            </button>
-            <button class="tab-head" data-tab="tabPro3d">
+            <button class="tab-head tab-head--active" data-tab="tabPro3d">
               <span>3D Portfolio</span>
               <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
             </button>
+            <button class="tab-head" data-tab="tabPro2d">
+              <span>2D Portfolio</span>
+              <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
+            </button>
           </div>
-          <div class="tab-body tab-body--active" id="tabPro2d">
-            <div class="grid" id="gridPro2d"></div>
-          </div>
-          <div class="tab-body" id="tabPro3d">
+          <div class="tab-body tab-body--active" id="tabPro3d">
             <div class="grid" id="gridPro3d"></div>
+          </div>
+          <div class="tab-body" id="tabPro2d">
+            <div class="grid" id="gridPro2d"></div>
           </div>
         </div>
       </main>
@@ -138,8 +138,6 @@
         if (site.pfpImage) {
           const navImg = document.querySelector('.nav-pfp-img');
           if (navImg) navImg.src = site.pfpImage;
-          const headerImg = document.querySelector('.header-logo-placeholder-img');
-          if (headerImg) headerImg.src = site.pfpImage;
         }
 
         const footerEl = document.getElementById('configFooterLinks');
@@ -417,7 +415,7 @@
       document.body.style.overflow = '';
     });
 
-    let activeProTab = 'tabPro2d';
+    let activeProTab = 'tabPro3d';
     document.querySelectorAll('.tab-head').forEach(btn => {
       btn.addEventListener('click', () => {
         const tab = btn.dataset.tab;

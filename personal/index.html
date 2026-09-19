@@ -46,9 +46,6 @@
     <header class="root-header">
       <a id="configCommissionLink" href="https://spewkuprices.carrd.co/" target="_blank" rel="noopener noreferrer" class="root-link-btn root-link-btn--prominent">COMMISSIONS PRICE SHEET</a>
       <a href="/game-art/" class="root-link-btn root-link-btn--prominent">GAME ART PORTFOLIO</a>
-      <div class="header-logo-placeholder">
-        <img src="/personal/pfp.png" alt="" class="header-logo-placeholder-img" />
-      </div>
     </header>
 
     <div class="root-body">
@@ -165,8 +162,6 @@
         if (site.pfpImage) {
           const navImg = document.querySelector('.nav-pfp-img');
           if (navImg) navImg.src = site.pfpImage;
-          const headerImg = document.querySelector('.header-logo-placeholder-img');
-          if (headerImg) headerImg.src = site.pfpImage;
         }
       } catch (e) {
         console.warn('Could not load siteConfig:', e);
