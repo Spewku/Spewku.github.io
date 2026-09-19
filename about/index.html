@@ -43,10 +43,10 @@
   <div class="about-page">
     <div class="about-columns">
       <div class="about-image-col">
-        <img src="/personal/pfp.png" alt="SPEWKU" class="about-image" id="aboutImage" />
+        <img src="/personal/glitch_pfp.png" alt="SPEWKU" class="about-image" id="aboutImage" />
       </div>
       <div class="about-text-col">
-        <h1 class="about-name" id="aboutName">SPEWKU</h1>
+        <img src="/img/spewku_name_logo.png" alt="SPEWKU" class="about-name-image" id="aboutName" />
         <div class="about-bio" id="aboutBio">
           Loading bio...
         </div>
@@ -100,10 +100,6 @@
         const res = await fetch('/personal/bioData.xml');
         const text = await res.text();
         const data = parseBioXml(text);
-
-        if (data.name) {
-          document.getElementById('aboutName').textContent = data.name;
-        }
 
         if (data.bio) {
           const bioEl = document.getElementById('aboutBio');
