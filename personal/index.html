@@ -473,11 +473,24 @@
 
     const tabsBar = document.querySelector('.tabs-bar');
     const topNav = document.querySelector('.top-nav');
+    let lastScrollY = window.scrollY;
     window.addEventListener('scroll', () => {
       const y = window.scrollY;
       const navH = topNav.offsetHeight;
       const stuck = tabsBar.getBoundingClientRect().top <= navH;
       tabsBar.classList.toggle('tabs-bar--stuck', stuck);
+      if (window.matchMedia('(max-width: 700px)').matches) {
+        const delta = y - lastScrollY;
+        if (delta > 2 && y > 140) {
+          tabsBar.classList.add('tabs-bar--hide');
+        } else if (delta < -2) {
+          tabsBar.classList.remove('tabs-bar--hide');
+        }
+        lastScrollY = y;
+      } else {
+        tabsBar.classList.remove('tabs-bar--hide');
+        lastScrollY = y;
+      }
     }, { passive: true });
 
     loadSiteConfig();
