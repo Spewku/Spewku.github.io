@@ -1680,7 +1680,7 @@
       "id": "DY5OVO"
     },
     {
-      "type": "personal",
+      "type": "false",
       "is3D": false,
       "title": "Art Fight 2026 Attack 4",
       "description": "",
@@ -1690,7 +1690,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdna.artstation.com/p/assets/images/images/101/266/572/smaller_square/spewku-af-4.jpg?1785651570",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 119,
+        "y": 7,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "2d",
