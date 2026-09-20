@@ -1017,26 +1017,34 @@ body {
 }
 
 .about-bio h1 { font-size: 28px; }
+
 .about-bio h2 { font-size: 22px; }
+
 .about-bio h3 { font-size: 18px; }
+
 .about-bio p {
   margin-bottom: 12px;
 }
+
 .about-bio strong {
   color: #c9f4ff;
 }
+
 .about-bio a {
   color: #c9f4ff;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
 .about-bio a:hover {
   opacity: 0.8;
 }
+
 .about-bio ul, .about-bio ol {
   padding-left: 20px;
   margin-bottom: 12px;
 }
+
 .about-bio li {
   margin-bottom: 4px;
 }
@@ -1208,4 +1216,20 @@ body {
 
 .card.card--loaded:hover {
   border-color: rgba(9, 144, 247, 0.3);
+}
+
+body[data-page="game-art"] .top-nav {
+background-color: rgba(33, 26, 10, 0.67);
+}
+
+body[data-page="game-art"] .root-wrap {
+background-color: rgba(40, 51, 23, 0.8);
+}
+
+body[data-page="game-art"] .si-hover {
+color: rgb(0, 203, 255);
+}
+
+body[data-page="game-art"] .si-selected {
+
 }
