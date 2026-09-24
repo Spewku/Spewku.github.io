@@ -1,6 +1,30 @@
 {
   "artData": [
     {
+      "id": "Xag5DR",
+      "type": "false",
+      "is3D": false,
+      "isAvatar": false,
+      "title": "Art Fight 2026 Attack 11",
+      "description": "",
+      "tags": [
+        "NoAI",
+        "2d",
+        "chibi",
+        "furry",
+        "furry art",
+        "art fight",
+        "digital art"
+      ],
+      "sourceLink": "https://www.artstation.com/artwork/Xag5DR",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/102/593/058/large/spewku-ma7.jpg?1790033163"
+      ],
+      "embed": "",
+      "thumbnail": "",
+      "thumbnailCrop": null
+    },
+    {
       "type": "personal",
       "is3D": false,
       "title": "Art Fight 2026 Attack 10",
@@ -27,7 +51,7 @@
       "id": "o0A8m4"
     },
     {
-      "type": "personal",
+      "type": "false",
       "is3D": false,
       "title": "Art Fight 2026 Attack 9",
       "description": "",
@@ -37,7 +61,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdna.artstation.com/p/assets/images/images/101/266/742/smaller_square/spewku-ma2.jpg?1785652384",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 1,
+        "y": 119,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "2d",
