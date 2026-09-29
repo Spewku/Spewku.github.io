@@ -46,6 +46,7 @@
     <div class="root-body">
       <main class="root-content">
         <div class="tabs">
+          <div class="tabs-bar-sticky">
           <div class="tabs-bar">
             <button class="tab-head tab-head--active" data-tab="tabPro3d">
               <span>3D Portfolio</span>
@@ -55,6 +56,7 @@
               <span>2D Portfolio</span>
               <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
             </button>
+          </div>
           </div>
           <div class="tab-body tab-body--active" id="tabPro3d">
             <div class="grid" id="gridPro3d"></div>
@@ -434,25 +436,34 @@
     });
 
     const tabsBar = document.querySelector('.tabs-bar');
+    const tabsBarSticky = document.querySelector('.tabs-bar-sticky');
     const topNav = document.querySelector('.top-nav');
+    const mediaMobile = window.matchMedia('(max-width: 700px)');
     let lastScrollY = window.scrollY;
+    let tabsHidden = false;
+    let scrollRaf = 0;
     window.addEventListener('scroll', () => {
-      const y = window.scrollY;
-      const navH = topNav.offsetHeight;
-      const stuck = tabsBar.getBoundingClientRect().top <= navH;
-      tabsBar.classList.toggle('tabs-bar--stuck', stuck);
-      if (window.matchMedia('(max-width: 700px)').matches) {
-        const delta = y - lastScrollY;
-        if (delta > 2 && y > 140) {
-          tabsBar.classList.add('tabs-bar--hide');
-        } else if (delta < -2) {
-          tabsBar.classList.remove('tabs-bar--hide');
+      if (scrollRaf) return;
+      scrollRaf = requestAnimationFrame(() => {
+        scrollRaf = 0;
+        const y = window.scrollY;
+        const navH = topNav.offsetHeight;
+        const stuck = tabsBar.getBoundingClientRect().top <= navH;
+        tabsBar.classList.toggle('tabs-bar--stuck', stuck);
+        if (!mediaMobile.matches) {
+          if (tabsBarSticky) tabsBarSticky.classList.remove('tabs-bar-sticky--hide');
+          tabsHidden = false;
+          lastScrollY = y;
+          return;
         }
+        const delta = y - lastScrollY;
         lastScrollY = y;
-      } else {
-        tabsBar.classList.remove('tabs-bar--hide');
-        lastScrollY = y;
-      }
+        if (delta > 0.5 && y > 140) {
+          if (!tabsHidden) { tabsBarSticky.classList.add('tabs-bar-sticky--hide'); tabsHidden = true; }
+        } else if (delta < -0.5) {
+          if (tabsHidden) { tabsBarSticky.classList.remove('tabs-bar-sticky--hide'); tabsHidden = false; }
+        }
+      });
     }, { passive: true });
 
     loadSiteConfig();
