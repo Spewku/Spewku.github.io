@@ -93,14 +93,6 @@ body {
   transition: opacity 0.2s;
 }
 
-.top-nav-logo span {
-  font-family: 'Oswald', system-ui, sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-shadow: 0 0 18px rgba(200, 244, 255, 0.35);
-}
-
 .top-nav-logo:hover {
   opacity: 0.85;
 }
@@ -1238,7 +1230,7 @@ background-color: rgba(33, 26, 10, 0.67);
 }
 
 body[data-page="game-art"] .root-wrap {
-background-color: rgba(40, 51, 23, 0.8);
+background-color: rgba(23, 56, 18, 0.76);
 }
 
 }
