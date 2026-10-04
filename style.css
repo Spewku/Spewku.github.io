@@ -1233,4 +1233,14 @@ body[data-page="game-art"] .root-wrap {
 background-color: rgba(23, 56, 18, 0.76);
 }
 
+body[data-page="home"] .top-nav-btn {
+
+}
+
+body[data-page="game-art"] .root-header-logo-img {
+
+}
+
+body[data-page="game-art"] .nav-pfp-img {
+
 }
