@@ -1246,7 +1246,7 @@ body[data-page="game-art"] .nav-pfp-img {
 }
 
 body[data-page="game-art"] span {
-color: rgba(204, 22, 171, 0.81);
+color: rgba(190, 27, 163, 0.88);
 }
 
 body[data-page="game-art"] .tabs-bar-sticky {
@@ -1254,7 +1254,7 @@ body[data-page="game-art"] .tabs-bar-sticky {
 }
 
 body[data-page="game-art"] .tab-head {
-color: rgb(224, 31, 209);
+color: rgb(174, 81, 135);
   background-color: rgba(64, 150, 62, 0.16);
 }
 
@@ -1278,26 +1278,32 @@ body[data-page="game-art"] .card:hover {
 --glow: rgba(77, 150, 123, 0.65);
 }
 
-body[data-page="game-art"] #tabPro3d {
+body[data-page="game-art"] .root-footer-link-btn {
+color: rgba(227, 28, 221, 0.91);
+}
+
+body[data-page="game-art"] .root-footer-heading {
+color: rgba(212, 43, 196, 0.86);
+}
+
+body[data-page="game-art"] #configFooterLinks {
 
 }
 
-body[data-page="game-art"] .tabs {
+body[data-page="game-art"] .root-footer {
 
 }
 
-body[data-page="game-art"] .root-content {
-
+body[data-page="game-art"] .top-nav-btn {
+color: rgb(201, 0, 155);
 }
 
-body[data-page="game-art"] .root-body {
-
+body[data-page="game-art"] .top-nav-btn:hover {
+color: rgba(149, 102, 153, 0.85);
 }
 
-body[data-page="game-art"] .root-header {
-
-}
-
-body[data-page="game-art"] .root-header-logo {
-
+body[data-page="game-art"] .top-nav-btn:active {
+color: rgba(128, 128, 128, 0.48);
+  border-color: rgb(201, 0, 155);
+  background-color: rgba(59, 196, 94, 0.14);
 }
