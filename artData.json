@@ -3,6 +3,34 @@
     {
       "type": "personal",
       "is3D": false,
+      "title": "Emote Sticker 2026",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/KR3w6o",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/102/957/835/large/spewku-you.jpg?1791166461"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/957/835/smaller_square/spewku-you.jpg?1791166461",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "Emote",
+        "2d",
+        "Digital Art",
+        "Furry",
+        "Furry art",
+        "Furry 2D",
+        "Discord Sticker",
+        "Telegram Sticker",
+        "Twitch Sticker",
+        "Commission"
+      ],
+      "isAvatar": false,
+      "id": "KR3w6o"
+    },
+    {
+      "type": "personal",
+      "is3D": false,
       "title": "Character Design Concept Character Modeling",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/AolOaW",
@@ -558,6 +586,109 @@
     {
       "type": "professional",
       "is3D": true,
+      "title": "Realistic Head Zbrush Assignment",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/o0Jor4",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/102/957/195/large/spewku-fixup.jpg?1791164157"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/957/195/20261004203557/smaller_square/spewku-fixup.jpg?1791164157",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "Game Art",
+        "Animation Ready",
+        "3d",
+        "3D art",
+        "Game Art Student"
+      ],
+      "isAvatar": false,
+      "id": "o0Jor4"
+    },
+    {
+      "type": "professional",
+      "is3D": true,
+      "title": "Character Head Practice 3",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/1LNg1Z",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/102/957/805/large/spewku-bigman1.jpg?1791166332",
+        "https://cdnb.artstation.com/p/assets/images/images/102/957/807/large/spewku-bigman2.jpg?1791166262",
+        "https://cdna.artstation.com/p/assets/images/images/102/957/808/large/spewku-bigman3.jpg?1791166263"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/957/805/20261004211212/smaller_square/spewku-bigman1.jpg?1791166332",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "Game Art",
+        "Cartoon Character",
+        "3d",
+        "3D art",
+        "Splatoon",
+        "Big man",
+        "Splatoon Big  Man",
+        "Splatoon 3D",
+        "Splatoon Model"
+      ],
+      "isAvatar": false,
+      "id": "1LNg1Z"
+    },
+    {
+      "type": "professional",
+      "is3D": true,
+      "title": "Character Head Practice 2",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/xd3bAO",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/102/957/764/large/spewku-glitch1.jpg?1791166125",
+        "https://cdna.artstation.com/p/assets/images/images/102/957/766/large/spewku-glitch2.jpg?1791166129"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/957/764/smaller_square/spewku-glitch1.jpg?1791166125",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "3d",
+        "Game Art",
+        "Cartoon Character",
+        "furry",
+        "3D Art",
+        "Anthro",
+        "Furry Model"
+      ],
+      "isAvatar": false,
+      "id": "xd3bAO"
+    },
+    {
+      "type": "professional",
+      "is3D": true,
+      "title": "Character Head Practice 1",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/8vBgWw",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/102/957/338/large/spewku-goob1.jpg?1791164697",
+        "https://cdnb.artstation.com/p/assets/images/images/102/957/339/large/spewku-goob2.jpg?1791164698",
+        "https://cdna.artstation.com/p/assets/images/images/102/957/340/large/spewku-goob3.jpg?1791164700"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/957/338/smaller_square/spewku-goob1.jpg?1791164697",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "Character Modeling",
+        "Game Art",
+        "3d",
+        "cartoon model",
+        "anthro"
+      ],
+      "isAvatar": false,
+      "id": "8vBgWw"
+    },
+    {
+      "type": "professional",
+      "is3D": true,
       "title": "3D Modeling 2 Final",
       "description": "Gargoyle Final Assignment for 3D modeling 2, now using skills in zbrush. Was modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager, Substance painter, and Zbrush",
       "sourceLink": "https://www.artstation.com/artwork/La539K",
@@ -764,7 +895,7 @@
       "isAvatar": false
     },
     {
-      "type": "personal",
+      "type": "professional",
       "is3D": true,
       "title": "Modeled Caravan",
       "description": "Caravan Modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter",
@@ -1977,137 +2108,6 @@
       ],
       "embed": "",
       "id": "4NGROl"
-    },
-    {
-      "type": "personal",
-      "is3D": false,
-      "title": "Emote Sticker 2026",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/KR3w6o",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/102/957/835/large/spewku-you.jpg?1791166461"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/957/835/smaller_square/spewku-you.jpg?1791166461",
-      "thumbnailCrop": null,
-      "tags": [
-        "NoAI",
-        "Emote",
-        "2d",
-        "Digital Art",
-        "Furry",
-        "Furry art",
-        "Furry 2D",
-        "Discord Sticker",
-        "Telegram Sticker",
-        "Twitch Sticker",
-        "Commission"
-      ],
-      "isAvatar": false,
-      "id": "KR3w6o"
-    },
-    {
-      "type": "personal",
-      "is3D": true,
-      "title": "Character Head Practice 3",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/1LNg1Z",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/102/957/805/large/spewku-bigman1.jpg?1791166332",
-        "https://cdnb.artstation.com/p/assets/images/images/102/957/807/large/spewku-bigman2.jpg?1791166262",
-        "https://cdna.artstation.com/p/assets/images/images/102/957/808/large/spewku-bigman3.jpg?1791166263"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/957/805/20261004211212/smaller_square/spewku-bigman1.jpg?1791166332",
-      "thumbnailCrop": null,
-      "tags": [
-        "NoAI",
-        "Game Art",
-        "Cartoon Character",
-        "3d",
-        "3D art",
-        "Splatoon",
-        "Big man",
-        "Splatoon Big  Man",
-        "Splatoon 3D",
-        "Splatoon Model"
-      ],
-      "isAvatar": false,
-      "id": "1LNg1Z"
-    },
-    {
-      "type": "personal",
-      "is3D": true,
-      "title": "Character Head Practice 2",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/xd3bAO",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/102/957/764/large/spewku-glitch1.jpg?1791166125",
-        "https://cdna.artstation.com/p/assets/images/images/102/957/766/large/spewku-glitch2.jpg?1791166129"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/957/764/smaller_square/spewku-glitch1.jpg?1791166125",
-      "thumbnailCrop": null,
-      "tags": [
-        "NoAI",
-        "3d",
-        "Game Art",
-        "Cartoon Character",
-        "furry",
-        "3D Art",
-        "Anthro",
-        "Furry Model"
-      ],
-      "isAvatar": false,
-      "id": "xd3bAO"
-    },
-    {
-      "type": "personal",
-      "is3D": true,
-      "title": "Character Head Practice 1",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/8vBgWw",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/102/957/338/large/spewku-goob1.jpg?1791164697",
-        "https://cdnb.artstation.com/p/assets/images/images/102/957/339/large/spewku-goob2.jpg?1791164698",
-        "https://cdna.artstation.com/p/assets/images/images/102/957/340/large/spewku-goob3.jpg?1791164700"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/957/338/smaller_square/spewku-goob1.jpg?1791164697",
-      "thumbnailCrop": null,
-      "tags": [
-        "NoAI",
-        "Character Modeling",
-        "Game Art",
-        "3d",
-        "cartoon model",
-        "anthro"
-      ],
-      "isAvatar": false,
-      "id": "8vBgWw"
-    },
-    {
-      "type": "personal",
-      "is3D": true,
-      "title": "Realistic Head Zbrush Assignment",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/o0Jor4",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/102/957/195/large/spewku-fixup.jpg?1791164157"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/957/195/20261004203557/smaller_square/spewku-fixup.jpg?1791164157",
-      "thumbnailCrop": null,
-      "tags": [
-        "NoAI",
-        "Game Art",
-        "Animation Ready",
-        "3d",
-        "3D art",
-        "Game Art Student"
-      ],
-      "isAvatar": false,
-      "id": "o0Jor4"
     }
   ]
 }
