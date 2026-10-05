@@ -127,7 +127,9 @@
 
         if (site.pfpImage) {
           const navImg = document.querySelector('.nav-pfp-img');
-          if (navImg) navImg.src = site.pfpImage;
+          if (navImg && !/(^|\/)img\//.test((navImg.getAttribute('src') || '').replace(/^\/+/, ''))) {
+            navImg.src = site.pfpImage;
+          }
         }
 
         const navComm = document.getElementById('configNavCommission');
