@@ -1307,3 +1307,11 @@ color: rgba(128, 128, 128, 0.48);
   border-color: rgb(201, 0, 155);
   background-color: rgba(59, 196, 94, 0.14);
 }
+
+body[data-page="home"] .nav-pfp-img {
+
+}
+
+body[data-page="personal"] .top-nav-btn {
+
+}
