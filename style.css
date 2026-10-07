@@ -1315,3 +1315,9 @@ body[data-page="personal"] .nav-pfp-img {
 body[data-page="home"] .nav-pfp-img {
 
 }
+
+body[data-page="home"] .socials-page {
+opacity: 0.89;
+  border-width: 0px;
+  line-height: 0.8;
+}
