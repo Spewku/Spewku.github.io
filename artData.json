@@ -47,22 +47,6 @@
     {
       "type": "personal",
       "is3D": false,
-      "title": "Character Design Concept Character Modeling",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/AolOaW",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/102/594/795/large/spewku-character-design-finalize.jpg?1789999462"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/594/795/20260921090422/smaller_square/spewku-character-design-finalize.jpg?1789999462",
-      "thumbnailCrop": null,
-      "tags": [],
-      "isAvatar": false,
-      "id": "AolOaW"
-    },
-    {
-      "type": "personal",
-      "is3D": false,
       "title": "Commission August 2026",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/DYv0zA",
@@ -160,22 +144,6 @@
     },
     {
       "type": "professional",
-      "is3D": false,
-      "title": "Art Fight 2026 Attack 14",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/WdBR8v",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/102/593/376/large/spewku-ma1.jpg?1790033067"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/593/376/20260921182427/smaller_square/spewku-ma1.jpg?1790033067",
-      "thumbnailCrop": null,
-      "tags": [],
-      "isAvatar": false,
-      "id": "WdBR8v"
-    },
-    {
-      "type": "personal",
       "is3D": false,
       "title": "Art Fight 2026 Attack 14",
       "description": "",
@@ -594,18 +562,6 @@
     {
       "type": "personal",
       "is3D": false,
-      "title": "Banner Commission",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/lGgQlk",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/099/255/981/large/spewku-nightshade-banner.jpg?1779389099"
-      ],
-      "embed": "",
-      "id": "lGgQlk"
-    },
-    {
-      "type": "personal",
-      "is3D": false,
       "title": "Splatoon Raiders Doodle",
       "description": "",
       "sourceLink": "https://www.artstation.com/artwork/6L90xN",
@@ -681,35 +637,6 @@
       "id": "1LNg1Z"
     },
     {
-      "type": "professional",
-      "is3D": true,
-      "title": "Character Head Practice 3",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/1LNg1Z",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/102/957/805/large/spewku-bigman1.jpg?1791166332",
-        "https://cdnb.artstation.com/p/assets/images/images/102/957/807/large/spewku-bigman2.jpg?1791166262",
-        "https://cdna.artstation.com/p/assets/images/images/102/957/808/large/spewku-bigman3.jpg?1791166263"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/957/805/20261004211212/smaller_square/spewku-bigman1.jpg?1791166332",
-      "thumbnailCrop": null,
-      "tags": [
-        "NoAI",
-        "Game Art",
-        "Cartoon Character",
-        "3d",
-        "3D art",
-        "Splatoon",
-        "Big man",
-        "Splatoon Big  Man",
-        "Splatoon 3D",
-        "Splatoon Model"
-      ],
-      "isAvatar": false,
-      "id": "1LNg1Z"
-    },
-    {
       "type": "personal",
       "is3D": true,
       "title": "Character Head Practice 2",
@@ -736,58 +663,7 @@
       "id": "xd3bAO"
     },
     {
-      "type": "professional",
-      "is3D": true,
-      "title": "Character Head Practice 2",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/xd3bAO",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/102/957/764/large/spewku-glitch1.jpg?1791166125",
-        "https://cdna.artstation.com/p/assets/images/images/102/957/766/large/spewku-glitch2.jpg?1791166129"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/957/764/smaller_square/spewku-glitch1.jpg?1791166125",
-      "thumbnailCrop": null,
-      "tags": [
-        "NoAI",
-        "3d",
-        "Game Art",
-        "Cartoon Character",
-        "furry",
-        "3D Art",
-        "Anthro",
-        "Furry Model"
-      ],
-      "isAvatar": false,
-      "id": "xd3bAO"
-    },
-    {
       "type": "personal",
-      "is3D": true,
-      "title": "Character Head Practice 1",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/8vBgWw",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/102/957/338/large/spewku-goob1.jpg?1791164697",
-        "https://cdnb.artstation.com/p/assets/images/images/102/957/339/large/spewku-goob2.jpg?1791164698",
-        "https://cdna.artstation.com/p/assets/images/images/102/957/340/large/spewku-goob3.jpg?1791164700"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/957/338/smaller_square/spewku-goob1.jpg?1791164697",
-      "thumbnailCrop": null,
-      "tags": [
-        "NoAI",
-        "Character Modeling",
-        "Game Art",
-        "3d",
-        "cartoon model",
-        "anthro"
-      ],
-      "isAvatar": false,
-      "id": "8vBgWw"
-    },
-    {
-      "type": "professional",
       "is3D": true,
       "title": "Character Head Practice 1",
       "description": "",
@@ -841,66 +717,7 @@
       "id": "La539K"
     },
     {
-      "type": "professional",
-      "is3D": true,
-      "title": "3D Modeling 2 Final",
-      "description": "Gargoyle Final Assignment for 3D modeling 2, now using skills in zbrush. Was modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager, Substance painter, and Zbrush",
-      "sourceLink": "https://www.artstation.com/artwork/La539K",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/100/027/968/large/spewku-st1.webp?1781661290",
-        "https://cdnb.artstation.com/p/assets/images/images/100/027/975/large/spewku-st3.webp?1781661306",
-        "https://cdnb.artstation.com/p/assets/images/images/100/027/979/large/spewku-st6.webp?1781661326",
-        "https://cdna.artstation.com/p/assets/images/images/100/027/978/large/spewku-st5.webp?1781661319",
-        "https://cdna.artstation.com/p/assets/images/images/100/027/974/large/spewku-st2.webp?1781661296",
-        "https://cdna.artstation.com/p/assets/images/images/100/027/976/large/spewku-st4.webp?1781661312",
-        "https://cdnb.artstation.com/p/assets/images/images/100/027/981/large/spewku-sp1.webp?1781661332",
-        "https://cdnb.artstation.com/p/assets/images/images/100/027/983/large/spewku-sp3.webp?1781661343",
-        "https://cdna.artstation.com/p/assets/images/images/100/027/958/large/spewku-sp5.webp?1781661268",
-        "https://cdnb.artstation.com/p/assets/images/images/100/027/961/large/spewku-sp6.webp?1781661274",
-        "https://cdna.artstation.com/p/assets/images/images/100/027/982/large/spewku-sp2.webp?1781661337",
-        "https://cdna.artstation.com/p/assets/images/images/100/027/964/large/spewku-sp7.webp?1781661279",
-        "https://cdna.artstation.com/p/assets/images/images/100/027/954/large/spewku-sp4.webp?1781661262",
-        "https://cdnb.artstation.com/p/assets/images/images/100/027/967/large/spewku-sp8.webp?1781661285"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/100/027/968/smaller_square/spewku-st1.jpg?1781661290",
-      "thumbnailCrop": null,
-      "tags": [],
-      "isAvatar": false,
-      "id": "La539K"
-    },
-    {
       "type": "personal",
-      "is3D": true,
-      "title": "Modeled Weapon Assignment V2",
-      "description": "Weapon assignment for 3D modeling 2, now using skills in zbrush.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager, Substance painter, and Zbrush",
-      "sourceLink": "https://www.artstation.com/artwork/3EK3Kv",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/098/223/024/large/spewku-sp1.webp?1776445911",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/028/large/spewku-sp2.webp?1776445917",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/034/large/spewku-sp3.webp?1776445922",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/036/large/spewku-sp4.webp?1776445927",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/040/large/spewku-sp5.webp?1776445933",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/042/large/spewku-sp6.webp?1776445938",
-        "https://cdnb.artstation.com/p/assets/images/images/098/223/045/large/spewku-sp7.webp?1776445942",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/048/large/spewku-st1.webp?1776445947",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/052/large/spewku-st2.webp?1776445952",
-        "https://cdnb.artstation.com/p/assets/images/images/098/223/057/large/spewku-st3.webp?1776445958",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/062/large/spewku-st4.webp?1776445963",
-        "https://cdnb.artstation.com/p/assets/images/images/098/223/069/large/spewku-st5.webp?1776445967",
-        "https://cdnb.artstation.com/p/assets/images/images/098/223/071/large/spewku-st6.webp?1776445973",
-        "https://cdnb.artstation.com/p/assets/images/images/098/223/075/large/spewku-zb1.webp?1776445977",
-        "https://cdna.artstation.com/p/assets/images/images/098/223/076/large/spewku-zb2.webp?1776445979",
-        "https://cdnb.artstation.com/p/assets/images/images/098/223/077/large/spewku-zb3.webp?1776445981",
-        "https://cdnb.artstation.com/p/assets/images/images/098/223/079/large/spewku-zb4.webp?1776445983",
-        "https://cdnb.artstation.com/p/assets/images/images/098/223/081/large/spewku-zb5.webp?1776445985"
-      ],
-      "embed": "",
-      "id": "3EK3Kv",
-      "isAvatar": false
-    },
-    {
-      "type": "professional",
       "is3D": true,
       "title": "Modeled Weapon Assignment V2",
       "description": "Weapon assignment for 3D modeling 2, now using skills in zbrush.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager, Substance painter, and Zbrush",
@@ -1003,19 +820,6 @@
       "isAvatar": false
     },
     {
-      "type": "professional",
-      "is3D": false,
-      "title": "Break Out Scene",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/lGklJ5",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/094/483/368/large/spewku-break-out.jpg?1765517414"
-      ],
-      "embed": "",
-      "id": "lGklJ5",
-      "isAvatar": false
-    },
-    {
       "type": "personal",
       "is3D": false,
       "title": "2025",
@@ -1029,35 +833,7 @@
       "isAvatar": false
     },
     {
-      "type": "professional",
-      "is3D": false,
-      "title": "2025",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/oJk634",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/094/423/427/large/spewku-37.jpg?1765406649"
-      ],
-      "embed": "",
-      "id": "oJk634",
-      "isAvatar": false
-    },
-    {
       "type": "personal",
-      "is3D": false,
-      "title": "Fantasy Perspective Art Package",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/qJkPqP",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/335/large/spewku-beauty-shot.jpg?1765517331",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/341/large/spewku-vehicle-creature.webp?1765517302",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/337/large/spewku-isometric-final.webp?1765517299"
-      ],
-      "embed": "",
-      "id": "qJkPqP",
-      "isAvatar": false
-    },
-    {
-      "type": "professional",
       "is3D": false,
       "title": "Fantasy Perspective Art Package",
       "description": "",
@@ -1099,41 +875,6 @@
     },
     {
       "type": "personal",
-      "is3D": false,
-      "title": "Perspective Throne",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/DLb3ge",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/094/483/258/large/spewku-throne-perspective.jpg?1765517610"
-      ],
-      "embed": "",
-      "id": "DLb3ge"
-    },
-    {
-      "type": "personal",
-      "is3D": true,
-      "title": "Modeled Sci-Fi Hallway",
-      "description": "Sci-fi Hallway final for 3D modeling 1\nModeled parts of hall way in Maya, then moved to Unreal Engine to implement all the pieces together to create a walkable environment. No texturing, everything is done through lighting in Unreal.",
-      "sourceLink": "https://www.artstation.com/artwork/dyk3AW",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/125/large/spewku-1.webp?1765516456",
-        "https://cdna.artstation.com/p/assets/images/images/094/483/126/large/spewku-2.webp?1765516459",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/129/large/spewku-3.webp?1765516461",
-        "https://cdna.artstation.com/p/assets/images/images/094/483/132/large/spewku-4.webp?1765516465",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/133/large/spewku-5.webp?1765516469",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/135/large/spewku-6.webp?1765516472",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/137/large/spewku-7.webp?1765516475",
-        "https://cdna.artstation.com/p/assets/images/images/094/483/138/large/spewku-8.webp?1765516478",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/139/large/spewku-9.webp?1765516481",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/141/large/spewku-10.webp?1765516485",
-        "https://cdna.artstation.com/p/assets/images/images/094/483/142/large/spewku-11.webp?1765516488"
-      ],
-      "embed": "",
-      "id": "dyk3AW",
-      "isAvatar": false
-    },
-    {
-      "type": "professional",
       "is3D": true,
       "title": "Modeled Sci-Fi Hallway",
       "description": "Sci-fi Hallway final for 3D modeling 1\nModeled parts of hall way in Maya, then moved to Unreal Engine to implement all the pieces together to create a walkable environment. No texturing, everything is done through lighting in Unreal.",
@@ -1157,25 +898,6 @@
     },
     {
       "type": "personal",
-      "is3D": true,
-      "title": "Modeled Caravan",
-      "description": "Caravan Modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter",
-      "sourceLink": "https://www.artstation.com/artwork/8B3Pr6",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/637/large/spewku-96.jpg?1765406222",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/625/large/spewku-95.webp?1765406186",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/628/large/spewku-94.webp?1765406189",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/630/large/spewku-93.webp?1765406192",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/632/large/spewku-92.webp?1765406195",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/634/large/spewku-91.webp?1765406199",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/635/large/spewku-90.webp?1765406202"
-      ],
-      "embed": "",
-      "id": "8B3Pr6",
-      "isAvatar": false
-    },
-    {
-      "type": "professional",
       "is3D": true,
       "title": "Modeled Caravan",
       "description": "Caravan Modeling assignment for 3D modeling 1.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter",
@@ -1343,26 +1065,6 @@
     },
     {
       "type": "personal",
-      "is3D": true,
-      "title": "Splatoon Modeled Arcade Machine ",
-      "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
-      "sourceLink": "https://www.artstation.com/artwork/gRaVPG",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/094/437/284/large/spewku-37.webp?1765405483",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/281/large/spewku-40.webp?1765405473",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/274/large/spewku-44.webp?1765405459",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/278/large/spewku-43.webp?1765405463",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/279/large/spewku-42.webp?1765405467",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/280/large/spewku-41.webp?1765405470",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/282/large/spewku-39.webp?1765405476",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/283/large/spewku-38.webp?1765405480"
-      ],
-      "embed": "",
-      "id": "gRaVPG",
-      "isAvatar": false
-    },
-    {
-      "type": "professional",
       "is3D": true,
       "title": "Splatoon Modeled Arcade Machine ",
       "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
@@ -1676,19 +1378,6 @@
       "isAvatar": false
     },
     {
-      "type": "professional",
-      "is3D": false,
-      "title": "2025",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/4NGRmY",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/094/423/398/large/spewku-35.jpg?1765406620"
-      ],
-      "embed": "",
-      "id": "4NGRmY",
-      "isAvatar": false
-    },
-    {
       "type": "personal",
       "is3D": false,
       "title": "2025",
@@ -1796,18 +1485,6 @@
       "embed": "",
       "id": "WXEbRX",
       "isAvatar": false
-    },
-    {
-      "type": "personal",
-      "is3D": false,
-      "title": "2024",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/WXEbRX",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/094/423/220/large/spewku-27-min.webp?1765379409"
-      ],
-      "embed": "",
-      "id": "WXEbRX"
     },
     {
       "type": "personal",
@@ -2434,6 +2111,156 @@
       ],
       "embed": "",
       "id": "4NGROl"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Cat Retexture Commission",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/V82Xo8",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/103/017/848/large/spewku-screenshot-2026-10-07-005803.jpg?1791350585",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/851/large/spewku-screenshot-2026-10-07-005836.jpg?1791350587",
+        "https://cdna.artstation.com/p/assets/images/images/103/017/854/large/spewku-screenshot-2026-10-07-005924.jpg?1791350590",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/855/large/spewku-screenshot-2026-10-07-010015.jpg?1791350591",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/857/large/spewku-screenshot-2026-10-07-010056.jpg?1791350594",
+        "https://cdna.artstation.com/p/assets/images/images/103/017/858/large/spewku-screenshot-2026-10-07-010141.jpg?1791350597"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/103/017/848/smaller_square/spewku-screenshot-2026-10-07-005803.jpg?1791350585",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "furry",
+        "furry commission",
+        "vrchat",
+        "vrchat furry",
+        "3d",
+        "vrchat commission",
+        "commission",
+        "texture",
+        "retexture"
+      ],
+      "isAvatar": false,
+      "id": "V82Xo8"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Avatar Retexture Commission",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/G1vnb4",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/103/017/820/large/spewku-screenshot-2026-10-07-005158.jpg?1791350436",
+        "https://cdna.artstation.com/p/assets/images/images/103/017/818/large/spewku-screenshot-2026-10-07-005052.jpg?1791350407",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/821/large/spewku-screenshot-2026-10-07-005252.jpg?1791350412"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/103/017/820/20261007002036/smaller_square/spewku-screenshot-2026-10-07-005158.jpg?1791350436",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "furry",
+        "3d",
+        "vrchat",
+        "vrchat commission",
+        "commission",
+        "vrchat furry",
+        "retexture",
+        "texture"
+      ],
+      "isAvatar": false,
+      "id": "G1vnb4"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Cat Retexture Commission",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/vzbWNa",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/763/large/spewku-screenshot-2026-10-07-004638.jpg?1791350264",
+        "https://cdna.artstation.com/p/assets/images/images/103/017/758/large/spewku-screenshot-2026-10-07-003752.jpg?1791350212",
+        "https://cdna.artstation.com/p/assets/images/images/103/017/760/large/spewku-screenshot-2026-10-07-003906.jpg?1791350216",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/765/large/spewku-screenshot-2026-10-07-004720.jpg?1791350220",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/767/large/spewku-screenshot-2026-10-07-004803.jpg?1791350223",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/771/large/spewku-screenshot-2026-10-07-004841.jpg?1791350226"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/103/017/763/20261007001744/smaller_square/spewku-screenshot-2026-10-07-004638.jpg?1791350264",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "furry",
+        "Vrchat",
+        "vrchat furry",
+        "commission",
+        "vrchat commission",
+        "retexture",
+        "texture",
+        "3d"
+      ],
+      "isAvatar": false,
+      "id": "vzbWNa"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Avatar Retexture Commission",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/KR38NG",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/103/017/700/large/spewku-screenshot-2026-10-06-234306.jpg?1791350054",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/701/large/spewku-screenshot-2026-10-07-002547.jpg?1791350025"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/103/017/700/20261007001414/smaller_square/spewku-screenshot-2026-10-06-234306.jpg?1791350054",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "vrchat",
+        "3d",
+        "vrchat commission",
+        "vrchat furry",
+        "commission",
+        "retexture",
+        "furry",
+        "3d art"
+      ],
+      "isAvatar": false,
+      "id": "KR38NG"
+    },
+    {
+      "type": "personal",
+      "is3D": true,
+      "title": "Retexture Commission",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/egRLG6",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/103/017/630/large/spewku-screenshot-2026-10-06-233004.jpg?1791349838",
+        "https://cdna.artstation.com/p/assets/images/images/103/017/632/large/spewku-screenshot-2026-10-06-233122.jpg?1791349684",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/633/large/spewku-screenshot-2026-10-06-233219.jpg?1791349687",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/635/large/spewku-screenshot-2026-10-06-233327.jpg?1791349689",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/637/large/spewku-screenshot-2026-10-06-233428.jpg?1791349691",
+        "https://cdna.artstation.com/p/assets/images/images/103/017/638/large/spewku-screenshot-2026-10-06-233656.jpg?1791349693"
+      ],
+      "embed": "",
+      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/103/017/630/20261007001038/smaller_square/spewku-screenshot-2026-10-06-233004.jpg?1791349838",
+      "thumbnailCrop": null,
+      "tags": [
+        "NoAI",
+        "Vrchat",
+        "3d",
+        "3D texture",
+        "vrchat Commission",
+        "vrchat avatar",
+        "retexture",
+        "avatar",
+        "furry",
+        "vrchat furry"
+      ],
+      "isAvatar": false,
+      "id": "egRLG6"
     }
   ]
 }
