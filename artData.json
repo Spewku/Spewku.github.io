@@ -1342,6 +1342,26 @@
       "isAvatar": true
     },
     {
+      "type": "personal",
+      "is3D": true,
+      "title": "Splatoon Modeled Arcade Machine ",
+      "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
+      "sourceLink": "https://www.artstation.com/artwork/gRaVPG",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/094/437/284/large/spewku-37.webp?1765405483",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/281/large/spewku-40.webp?1765405473",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/274/large/spewku-44.webp?1765405459",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/278/large/spewku-43.webp?1765405463",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/279/large/spewku-42.webp?1765405467",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/280/large/spewku-41.webp?1765405470",
+        "https://cdna.artstation.com/p/assets/images/images/094/437/282/large/spewku-39.webp?1765405476",
+        "https://cdnb.artstation.com/p/assets/images/images/094/437/283/large/spewku-38.webp?1765405480"
+      ],
+      "embed": "",
+      "id": "gRaVPG",
+      "isAvatar": false
+    },
+    {
       "type": "professional",
       "is3D": true,
       "title": "Splatoon Modeled Arcade Machine ",
