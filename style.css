@@ -812,13 +812,15 @@ body {
    ═══════════════════════════════════════════════════ */
 
 .socials-page {
-  width: 100%;
+width: 100%;
   max-width: 600px;
   padding: 24px 24px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 28px;
+  opacity: 0.88;
+  line-height: 0.8;
 }
 
 .socials-header-row {
@@ -996,7 +998,7 @@ body {
 .about-bio code,
 .about-bio em,
 .about-bio strong {
-  overflow-wrap: break-word;
+overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
@@ -1314,10 +1316,4 @@ body[data-page="personal"] .nav-pfp-img {
 
 body[data-page="home"] .nav-pfp-img {
 
-}
-
-body[data-page="home"] .socials-page {
-opacity: 0.89;
-  border-width: 0px;
-  line-height: 0.8;
 }
