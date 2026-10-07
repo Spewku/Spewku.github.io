@@ -68,7 +68,7 @@ body {
 /* ── top nav ── */
 
 .top-nav {
-position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -113,7 +113,7 @@ position: fixed;
 }
 
 .top-nav-links {
-display: flex;
+  display: flex;
   gap: 4px;
 }
 
@@ -138,7 +138,7 @@ display: flex;
 }
 
 .top-nav-btn--active {
-color: #c9f4ff;
+  color: #c9f4ff;
   background: rgba(9, 144, 247, 0.14);
 }
 
@@ -940,12 +940,9 @@ color: #c9f4ff;
    ═══════════════════════════════════════════════════ */
 
 .about-page {
-width: 100%;
+  width: 100%;
   max-width: 1000px;
   padding: 24px 24px 40px;
-  transform: translate(0px, 0px) rotate(0deg) scale(1.000, 1.000);
-  transform-origin: center;
-  letter-spacing: -0.5px;
 }
 
 .about-columns {
@@ -960,12 +957,11 @@ width: 100%;
 }
 
 .about-image {
-width: 100%;
+  width: 100%;
   border-radius: 16px;
   object-fit: cover;
   border: 2px solid rgba(200, 244, 255, 0.15);
   background: #0a0a12;
-  transform: translate(0px, 0px) scale(1.0700);
 }
 
 .about-text-col {
@@ -975,7 +971,7 @@ width: 100%;
 }
 
 .about-name-image {
---name-overlap: calc(clamp(200px, 26vw, 400px) * -0.0416667);
+  --name-overlap: calc(clamp(200px, 26vw, 400px) * -0.0416667);
   display: block;
   width: clamp(200px, 26vw, 400px);
   height: auto;
@@ -983,7 +979,6 @@ width: 100%;
   position: relative;
   z-index: 1;
   margin-bottom: var(--name-overlap);
-  transform: translate(0px, 0px) scale(1.5000);
 }
 
 .about-bio {
@@ -1321,22 +1316,42 @@ body[data-page="home"] .nav-pfp-img {
 
 }
 
-body[data-page="about"] #configNavCommission {
+body[data-page="personal"] .card-title {
 
 }
 
-body[data-page="about"] #aboutImage {
+body[data-page="personal"] .card-img {
 
 }
 
-body[data-page="about"] #aboutName {
+body[data-page="personal"] .card-thumb {
 
 }
 
-body[data-page="about"] h1 {
+body[data-page="personal"] .card--loaded {
+border-radius: 20px;
+}
+
+body[data-page="personal"] .root-header-logo-img {
+transform: translate(0px, 0px) scale(1.8400);
+}
+
+body[data-page="personal"] #configCommissionLink {
+font-size: 18px;
+}
+
+body[data-page="personal"] #configNavCommission {
 
 }
 
-body[data-page="about"] code {
+body[data-page="personal"] .root-header-logo {
+
+}
+
+body[data-page="personal"] .root-link-btn--prominent {
+font-size: 16px;
+}
+
+body[data-page="personal"] .top-nav-btn {
 
 }
