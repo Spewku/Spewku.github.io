@@ -1238,7 +1238,7 @@ body[data-page="home"] .top-nav-btn {
 }
 
 body[data-page="game-art"] .root-header-logo-img {
-
+transform: translate(0px, 0px) scale(2.2800);
 }
 
 body[data-page="game-art"] .nav-pfp-img {
@@ -1313,45 +1313,5 @@ body[data-page="personal"] .nav-pfp-img {
 }
 
 body[data-page="home"] .nav-pfp-img {
-
-}
-
-body[data-page="personal"] .card-title {
-
-}
-
-body[data-page="personal"] .card-img {
-
-}
-
-body[data-page="personal"] .card-thumb {
-
-}
-
-body[data-page="personal"] .card--loaded {
-border-radius: 20px;
-}
-
-body[data-page="personal"] .root-header-logo-img {
-transform: translate(0px, 0px) scale(1.8400);
-}
-
-body[data-page="personal"] #configCommissionLink {
-font-size: 18px;
-}
-
-body[data-page="personal"] #configNavCommission {
-
-}
-
-body[data-page="personal"] .root-header-logo {
-
-}
-
-body[data-page="personal"] .root-link-btn--prominent {
-font-size: 16px;
-}
-
-body[data-page="personal"] .top-nav-btn {
 
 }
