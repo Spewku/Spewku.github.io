@@ -1399,3 +1399,7 @@ body[data-page="personal"] .nav-pfp-img {
 body[data-page="home"] .nav-pfp-img {
 
 }
+
+body[data-page="personal"] .root-header-logo-img {
+transform: translate(0px, 0px) scale(1.0400);
+}
