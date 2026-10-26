@@ -604,7 +604,8 @@
         "Game Art Student"
       ],
       "isAvatar": false,
-      "id": "o0Jor4"
+      "id": "o0Jor4",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -633,7 +634,8 @@
         "Splatoon Model"
       ],
       "isAvatar": false,
-      "id": "1LNg1Z"
+      "id": "1LNg1Z",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -659,7 +661,8 @@
         "Furry Model"
       ],
       "isAvatar": false,
-      "id": "xd3bAO"
+      "id": "xd3bAO",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -684,7 +687,8 @@
         "anthro"
       ],
       "isAvatar": false,
-      "id": "8vBgWw"
+      "id": "8vBgWw",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -713,7 +717,8 @@
       "thumbnailCrop": null,
       "tags": [],
       "isAvatar": false,
-      "id": "La539K"
+      "id": "La539K",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -743,7 +748,8 @@
       ],
       "embed": "",
       "id": "3EK3Kv",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "personal",
@@ -791,7 +797,8 @@
       ],
       "embed": "",
       "id": "qJDqDz",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "personal",
@@ -816,7 +823,8 @@
       ],
       "embed": "",
       "id": "lGklJ5",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "professional",
@@ -829,7 +837,8 @@
       ],
       "embed": "",
       "id": "oJk634",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "professional",
@@ -844,7 +853,8 @@
       ],
       "embed": "",
       "id": "qJkPqP",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "personal",
@@ -892,7 +902,8 @@
       ],
       "embed": "",
       "id": "dyk3AW",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "environmental-modeling"
     },
     {
       "type": "professional",
@@ -911,7 +922,8 @@
       ],
       "embed": "",
       "id": "8B3Pr6",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "environmental-modeling"
     },
     {
       "type": "personal",
@@ -960,7 +972,8 @@
       ],
       "embed": "",
       "id": "gRaV9G",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "personal",
@@ -1043,7 +1056,8 @@
       ],
       "embed": "",
       "id": "y4r2QO",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "personal",
@@ -1079,7 +1093,8 @@
       ],
       "embed": "",
       "id": "gRaVPG",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "professional",
@@ -1096,7 +1111,8 @@
       ],
       "embed": "",
       "id": "4NGPaq",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "professional",
@@ -1110,7 +1126,8 @@
       ],
       "embed": "",
       "id": "AZ16QX",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "personal",
@@ -1373,7 +1390,8 @@
       ],
       "embed": "",
       "id": "4NGRmY",
-      "isAvatar": false
+      "isAvatar": false,
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "personal",

@@ -52,7 +52,21 @@
     "pfpImage": "/personal/pfp.png"
   },
   "professional": {
-    "bio": "",
-    "contacts": []
+    "name": "Your Name",
+    "headline": "Game Artist & 3D Modeler",
+    "bio": "Game artist specializing in environment and character modeling, with a focus on real-time production. I build assets in Maya and ZBrush, texture them in Substance Painter, and assemble scenes in Unreal Engine.",
+    "image": "/personal/glitch_pfp.png",
+    "aboutTitle": "About the Artist",
+    "aboutBio": "I am a game artist with a focus on 3D modeling for games. My work spans environmental modeling, character modeling, and prop and weapon creation, from blockout through final texturing and presentation.\n\nMy process typically starts in Maya for modeling, moves through ZBrush for high-detail sculpting, and finishes in Substance Painter for texturing. I also enjoy putting assets together in Unreal Engine to check scale, lighting, and how a finished environment reads in real time.\n\nI am currently open to entry-level game art roles, internships, and freelance opportunities. Thanks for taking the time to look through my work.",
+    "contacts": [
+      { "label": "Email", "url": "mailto:spewku.business@gmail.com" },
+      { "label": "ArtStation", "url": "https://www.artstation.com/spewku" }
+    ],
+    "tabs": [
+      { "id": "environmental-modeling", "name": "Environmental Modeling" },
+      { "id": "character-modeling", "name": "Character Modeling" },
+      { "id": "props-weapons", "name": "Props & Weapons" },
+      { "id": "2d-illustration", "name": "2D Illustration" }
+    ]
   }
 }

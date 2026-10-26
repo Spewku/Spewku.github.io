@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About the Artist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="https://spewku.com/img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <meta content="About the Artist | Game Art" property="og:title" />
+  <meta content="Recruiter-focused about page for a professional game artist." property="og:description" />
+  <meta content="https://spewku.com/gameart/about/" property="og:url" />
+  <meta content="https://spewku.com/personal/pfp.png" property="og:image" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="2048">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:src" content="https://spewku.com/img/icon.png">
+  <meta content="#0990f7" data-react-helmet="true" name="theme-color" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body data-background="game-art.json" data-page="game-art">
+  <div class="pageloader" id="pageloader"><div class="pageloader-spinner"></div></div>
+
+  <canvas id="water" data-tint="rgba(200, 244, 255, 0.08)" aria-hidden="true"></canvas>
+
+  <nav class="top-nav">
+    <a href="/gameart/" class="top-nav-logo">
+      <div class="nav-pfp">
+        <img src="/img/pfp-game-art.png" alt="Game Art" class="nav-pfp-img" />
+      </div>
+    </a>
+    <div class="top-nav-links">
+      <a href="/gameart/" class="top-nav-btn">Gallery</a>
+      <a href="/gameart/about/" class="top-nav-btn top-nav-btn--active">About</a>
+    </div>
+  </nav>
+
+  <div class="about-page professional-about-page">
+    <div class="about-columns">
+      <div class="about-image-col">
+        <img src="/personal/glitch_pfp.png" alt="" class="about-image" id="proAboutImage" />
+      </div>
+      <div class="about-text-col">
+        <h1 class="professional-name" id="proAboutName">Game Artist</h1>
+        <p class="professional-headline" id="proAboutHeadline"></p>
+        <h2 class="professional-about-title" id="proAboutTitle">About the Artist</h2>
+        <div class="about-bio" id="proAboutBio">Loading...</div>
+        <div class="professional-contact-block" id="proContactBlock">
+          <h2 class="professional-contact-heading">Contact</h2>
+          <div class="professional-contact-links" id="proContacts"></div>
+        </div>
+        <div class="about-links">
+          <a href="/gameart/" class="root-link-btn">View Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function renderBio(text) {
+      const el = document.getElementById('proAboutBio');
+      const value = String(text || '').trim();
+      if (!value) {
+        el.textContent = '';
+        return;
+      }
+      if (window.marked && typeof window.marked.parse === 'function') {
+        el.innerHTML = window.marked.parse(value);
+        return;
+      }
+      el.innerHTML = '';
+      for (const paragraph of value.split(/\n{2,}/)) {
+        const p = document.createElement('p');
+        p.textContent = paragraph.trim();
+        el.appendChild(p);
+      }
+    }
+
+    async function loadAboutPage() {
+      try {
+        const res = await fetch('/siteConfig.json');
+        const cfg = await res.json();
+        const site = cfg.site || {};
+        const pro = cfg.professional || {};
+
+        const name = pro.name || 'Game Artist';
+        document.getElementById('proAboutName').textContent = name;
+        document.getElementById('proAboutHeadline').textContent = pro.headline || '';
+        document.getElementById('proAboutTitle').textContent = pro.aboutTitle || 'About the Artist';
+        document.title = `${name} — About`;
+
+        if (pro.image) {
+          document.getElementById('proAboutImage').src = pro.image;
+        } else if ((cfg.about || {}).image) {
+          document.getElementById('proAboutImage').src = cfg.about.image;
+        }
+
+        renderBio(pro.aboutBio || pro.bio || '');
+
+        if (site.pfpImage) {
+          const navImg = document.querySelector('.nav-pfp-img');
+          if (navImg && !/(^|\/)img\//.test((navImg.getAttribute('src') || '').replace(/^\/+/, ''))) {
+            navImg.src = site.pfpImage;
+          }
+        }
+
+        const contacts = (pro.contacts || []).filter((contact) => contact && contact.url);
+        const contactBlock = document.getElementById('proContactBlock');
+        const contactLinks = document.getElementById('proContacts');
+        if (contacts.length) {
+          contactLinks.innerHTML = '';
+          for (const contact of contacts) {
+            const a = document.createElement('a');
+            a.href = contact.url;
+            a.className = 'root-link-btn';
+            a.textContent = contact.label || contact.url;
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            contactLinks.appendChild(a);
+          }
+        } else {
+          contactBlock.style.display = 'none';
+        }
+      } catch (e) {
+        console.warn('Could not load professional about data:', e);
+      }
+    }
+
+    loadAboutPage();
+  </script>
+  <script src="/js/loader.js"></script>
+  <script type="module" src="/background/main.js"></script>
+</body>
+</html>

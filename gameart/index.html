@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>spewku.com — Game Art</title>
+  <title>Game Art Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/style.css" />
   <link rel="icon" href="https://spewku.com/img/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-  <meta content="Spewku | Game Art" property="og:title" />
-  <meta content="Spewku's professional game art portfolio." property="og:description" />
-  <meta content="https://spewku.com/game-art/" property="og:url" />
+  <meta content="Game Art Portfolio" property="og:title" />
+  <meta content="Professional game art portfolio." property="og:description" />
+  <meta content="https://spewku.com/gameart/" property="og:url" />
   <meta content="https://spewku.com/personal/pfp.png" property="og:image" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="2048">
@@ -28,18 +28,20 @@
   <nav class="top-nav">
     <a href="/home/" class="top-nav-logo">
       <div class="nav-pfp">
-        <img src="/img/pfp-game-art.png" alt="SPEWKU" class="nav-pfp-img" />
+        <img src="/img/pfp-game-art.png" alt="Game Art" class="nav-pfp-img" />
       </div>
     </a>
     <div class="top-nav-links">
-      <a href="/about/" class="top-nav-btn">About Me</a>
-      <a href="/game-art/" class="top-nav-btn top-nav-btn--active">Game Art</a>
+      <a href="/gameart/" class="top-nav-btn top-nav-btn--active">Gallery</a>
+      <a href="/gameart/about/" class="top-nav-btn">About</a>
     </div>
   </nav>
 
   <div class="root-wrap">
-    <div class="root-header-logo">
-      <img src="/img/spewku_name_logo-game-art.png" alt="SPEWKU" class="root-header-logo-img" />
+    <div class="professional-header">
+      <h1 class="professional-name" id="proName">Game Artist</h1>
+      <p class="professional-headline" id="proHeadline"></p>
+      <a href="/gameart/about/" class="root-link-btn professional-header-about">About the Artist</a>
     </div>
     <header class="root-header">
     </header>
@@ -48,35 +50,12 @@
       <main class="root-content">
         <div class="tabs">
           <div class="tabs-bar-sticky">
-          <div class="tabs-bar">
-            <button class="tab-head tab-head--active" data-tab="tabPro3d">
-              <span>3D Portfolio</span>
-              <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
-            </button>
-            <button class="tab-head" data-tab="tabPro2d">
-              <span>2D Portfolio</span>
-              <svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>
-            </button>
+            <div class="tabs-bar" id="proTabsBar"></div>
           </div>
-          </div>
-          <div class="tab-body tab-body--active" id="tabPro3d">
-            <div class="grid" id="gridPro3d"></div>
-          </div>
-          <div class="tab-body" id="tabPro2d">
-            <div class="grid" id="gridPro2d"></div>
-          </div>
+          <div id="proTabsBody"></div>
         </div>
       </main>
     </div>
-
-    <footer class="root-footer">
-      <h2 class="root-footer-heading">Contact Me</h2>
-      <div class="root-footer-links" id="configFooterLinks">
-        <a href="mailto:freakyyfurz@gmail.com" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Email</a>
-        <a href="https://www.etsy.com/shop/Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Etsy</a>
-        <a href="https://cash.app/$Spewku" target="_blank" rel="noopener noreferrer" class="root-footer-link-btn">Cash App</a>
-      </div>
-    </footer>
   </div>
 
   <dialog class="detail" id="detail">
@@ -115,19 +94,89 @@
   <script>
     const GALLERY_URL = '/artData.json';
 
+    let professionalTabs = [];
+    let activeProTab = null;
+
+    function normalizeTabs(rawTabs) {
+      if (!Array.isArray(rawTabs)) return [];
+      return rawTabs
+        .map((tab) => {
+          if (typeof tab === 'string') return { id: tab, name: tab };
+          if (!tab) return null;
+          return { id: tab.id || tab.name || '', name: tab.name || tab.id || '' };
+        })
+        .filter((tab) => tab && tab.id && tab.name);
+    }
+
+    function matchesTab(post, tab) {
+      return post.gameArtTab === tab.id || post.gameArtTab === tab.name;
+    }
+
+    function createProTab(id, label, items, isFirst) {
+      const bar = document.getElementById('proTabsBar');
+      const body = document.getElementById('proTabsBody');
+
+      const btn = document.createElement('button');
+      btn.className = 'tab-head' + (isFirst ? ' tab-head--active' : '');
+      btn.dataset.tab = id;
+      btn.innerHTML = '<span></span><svg class="tab-chevron" width="12" height="8" viewBox="0 0 12 8" fill="currentColor"><path d="M1 1l5 5 5-5"/></svg>';
+      btn.querySelector('span').textContent = label;
+      bar.appendChild(btn);
+
+      const pane = document.createElement('div');
+      pane.className = 'tab-body' + (isFirst ? ' tab-body--active' : '');
+      pane.id = id;
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      pane.appendChild(grid);
+      body.appendChild(pane);
+
+      renderGrid(grid, items);
+      if (isFirst) activeProTab = id;
+    }
+
+    function buildTabs(posts) {
+      const bar = document.getElementById('proTabsBar');
+      const body = document.getElementById('proTabsBody');
+      bar.innerHTML = '';
+      body.innerHTML = '';
+      activeProTab = null;
+
+      const tabs = normalizeTabs(professionalTabs);
+      let first = true;
+
+      if (tabs.length) {
+        const knownKeys = new Set();
+        for (const tab of tabs) {
+          knownKeys.add(tab.id);
+          knownKeys.add(tab.name);
+        }
+        for (const tab of tabs) {
+          const items = posts.filter((post) => matchesTab(post, tab));
+          createProTab(`tabProTab-${tab.id}`, tab.name, items, first);
+          first = false;
+        }
+
+        const other = posts.filter((post) => {
+          const key = post.gameArtTab;
+          return !key || !knownKeys.has(key);
+        });
+        if (other.length) {
+          createProTab('tabProOther', 'Other Work', other, first);
+        }
+      } else {
+        createProTab('tabPro3d', '3D Work', posts.filter((post) => post.is3D), true);
+        createProTab('tabPro2d', '2D Work', posts.filter((post) => !post.is3D), false);
+      }
+    }
+
     async function loadGallery() {
       try {
         const res = await fetch(GALLERY_URL);
         const data = await res.json();
         const posts = data.artData || [];
 
-        const filtered = posts.filter(p => p.type === 'professional');
-
-        const pro2d = filtered.filter(p => !p.is3D);
-        const pro3d = filtered.filter(p => p.is3D);
-
-        renderGrid('gridPro2d', pro2d);
-        renderGrid('gridPro3d', pro3d);
+        buildTabs(posts.filter(p => p.type === 'professional'));
       } catch (e) {
         console.error('Failed to load gallery:', e);
       }
@@ -138,6 +187,8 @@
         const res = await fetch('/siteConfig.json');
         const cfg = await res.json();
         const site = cfg.site || {};
+        const pro = cfg.professional || {};
+
         if (site.pfpImage) {
           const navImg = document.querySelector('.nav-pfp-img');
           if (navImg && !/(^|\/)img\//.test((navImg.getAttribute('src') || '').replace(/^\/+/, ''))) {
@@ -145,23 +196,20 @@
           }
         }
 
-        const footerEl = document.getElementById('configFooterLinks');
-        if (footerEl && (cfg.personal || {}).footerContacts) {
-          const footerBtns = footerEl.querySelectorAll('.root-footer-link-btn');
-          cfg.personal.footerContacts.forEach((c, i) => {
-            if (footerBtns[i]) {
-              footerBtns[i].href = c.url;
-              footerBtns[i].textContent = c.label;
-            }
-          });
-        }
+        const name = pro.name || 'Game Artist';
+        document.getElementById('proName').textContent = name;
+        document.getElementById('proHeadline').textContent = pro.headline || '';
+        document.title = `${name} — Game Art`;
+
+        professionalTabs = pro.tabs || [];
       } catch (e) {
         console.warn('Could not load siteConfig:', e);
       }
     }
 
-    function renderGrid(id, items) {
-      const grid = document.getElementById(id);
+    function renderGrid(target, items) {
+      const grid = typeof target === 'string' ? document.getElementById(target) : target;
+      if (!grid) return;
       cardLoader.mount(grid, items, el => openDetail(el.dataset.post));
     }
 
@@ -420,22 +468,22 @@
       document.body.style.overflow = '';
     });
 
-    let activeProTab = 'tabPro3d';
-    document.querySelectorAll('.tab-head').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tab = btn.dataset.tab;
-        if (tab === activeProTab) {
-          document.querySelectorAll('.tab-head').forEach(b => b.classList.remove('tab-head--active'));
-          document.querySelectorAll('.tab-body').forEach(b => b.classList.remove('tab-body--active'));
-          activeProTab = null;
-        } else {
-          document.querySelectorAll('.tab-head').forEach(b => b.classList.remove('tab-head--active'));
-          document.querySelectorAll('.tab-body').forEach(b => b.classList.remove('tab-body--active'));
-          btn.classList.add('tab-head--active');
-          document.getElementById(tab).classList.add('tab-body--active');
-          activeProTab = tab;
-        }
-      });
+    document.querySelector('.tabs').addEventListener('click', (e) => {
+      const btn = e.target.closest('.tab-head');
+      if (!btn) return;
+      const tab = btn.dataset.tab;
+      if (tab === activeProTab) {
+        document.querySelectorAll('.tab-head').forEach(b => b.classList.remove('tab-head--active'));
+        document.querySelectorAll('.tab-body').forEach(b => b.classList.remove('tab-body--active'));
+        activeProTab = null;
+      } else {
+        document.querySelectorAll('.tab-head').forEach(b => b.classList.remove('tab-head--active'));
+        document.querySelectorAll('.tab-body').forEach(b => b.classList.remove('tab-body--active'));
+        btn.classList.add('tab-head--active');
+        const pane = document.getElementById(tab);
+        if (pane) pane.classList.add('tab-body--active');
+        activeProTab = tab;
+      }
     });
 
     const tabsBar = document.querySelector('.tabs-bar');
@@ -469,8 +517,10 @@
       });
     }, { passive: true });
 
-    loadSiteConfig();
-    loadGallery();
+    (async function init() {
+      await loadSiteConfig();
+      await loadGallery();
+    })();
   </script>
   <script src="/js/loader.js"></script>
   <script type="module" src="/background/main.js"></script>
