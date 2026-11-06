@@ -1330,7 +1330,7 @@ body[data-page="game-art"] .nav-pfp-img {
 }
 
 body[data-page="game-art"] span {
-color: rgba(190, 27, 163, 0.88);
+color: rgb(178, 188, 67);
 }
 
 body[data-page="game-art"] .tabs-bar-sticky {
@@ -1340,6 +1340,8 @@ body[data-page="game-art"] .tabs-bar-sticky {
 body[data-page="game-art"] .tab-head {
 color: rgb(174, 81, 135);
   background-color: rgba(64, 150, 62, 0.16);
+  border-radius: 9px;
+  border-width: 1px;
 }
 
 body[data-page="game-art"] .card-img {
@@ -1379,11 +1381,12 @@ body[data-page="game-art"] .root-footer {
 }
 
 body[data-page="game-art"] .top-nav-btn {
-color: rgb(201, 0, 155);
+color: rgb(178, 188, 67);
+  background-color: rgba(128, 128, 128, 0);
 }
 
 body[data-page="game-art"] .top-nav-btn:hover {
-color: rgba(149, 102, 153, 0.85);
+color: rgb(96, 102, 36);
 }
 
 body[data-page="game-art"] .top-nav-btn:active {
@@ -1402,4 +1405,68 @@ body[data-page="home"] .nav-pfp-img {
 
 body[data-page="personal"] .root-header-logo-img {
 transform: translate(0px, 0px) scale(1.0400);
+}
+
+body[data-page="game-art"] #proName {
+color: rgb(178, 188, 67);
+}
+
+body[data-page="game-art"] #proHeadline {
+color: rgb(178, 188, 67);
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+body[data-page="game-art"] .root-link-btn {
+color: rgb(178, 188, 67);
+  border-color: rgba(196, 210, 45, 0.15);
+  font-size: 24px;
+  line-height: 1.1500000000000001;
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+body[data-page="game-art"] .root-link-btn:hover {
+color: rgb(178, 188, 67);
+}
+
+body[data-page="game-art"] .root-link-btn:active {
+color: rgba(212, 192, 43, 0.65);
+}
+
+body[data-page="game-art"] .root-link-btn:focus {
+color: rgba(208, 205, 47, 0.65);
+  font-size: 24px;
+}
+
+body[data-page="game-art"] #proHeadline:hover {
+font-size: 28px;
+}
+
+body[data-page="game-art"] .tab-head:hover {
+color: rgb(184, 173, 71);
+}
+
+body[data-page="game-art"] .tab-head:active {
+color: rgba(183, 175, 72, 0.5);
+  border-color: rgba(191, 147, 64, 0.12);
+}
+
+body[data-page="game-art"] .tab-head:focus {
+color: rgba(195, 188, 60, 0.5);
+  border-color: rgba(201, 135, 54, 0.12);
+}
+
+body[data-page="game-art"] .card-img:focus {
+color: rgb(206, 106, 49);
+  text-align: center;
+}
+
+body[data-page="game-art"] .top-nav-btn--active {
+
+}
+
+body[data-page="game-art"] span:hover {
+color: rgb(197, 120, 58);
 }
