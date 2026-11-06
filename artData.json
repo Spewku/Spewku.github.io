@@ -55,10 +55,16 @@
       ],
       "embed": "",
       "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/594/795/20260921090422/smaller_square/spewku-character-design-finalize.jpg?1789999462",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [],
       "isAvatar": false,
-      "id": "AolOaW"
+      "id": "AolOaW",
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "personal",
@@ -573,7 +579,11 @@
       ],
       "embed": "",
       "id": "WXEbRX",
-      "isAvatar": false
+      "isAvatar": false,
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null,
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "personal",
@@ -720,10 +730,16 @@
       ],
       "embed": "",
       "thumbnail": "https://cdna.artstation.com/p/assets/images/images/100/027/968/smaller_square/spewku-st1.jpg?1781661290",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [],
       "isAvatar": false,
-      "id": "La539K"
+      "id": "La539K",
+      "gameArtTab": "environmental-modeling"
     },
     {
       "type": "personal",
@@ -751,6 +767,33 @@
       "isAvatar": false,
       "id": "xd3bAO",
       "gameArtTab": "character-modeling"
+    },
+    {
+      "type": "professional",
+      "is3D": true,
+      "title": "Modeled Sci-Fi Hallway",
+      "description": "Sci-fi Hallway final for 3D modeling 1\nModeled parts of hall way in Maya, then moved to Unreal Engine to implement all the pieces together to create a walkable environment. No texturing, everything is done through lighting in Unreal.",
+      "sourceLink": "https://www.artstation.com/artwork/dyk3AW",
+      "images": [
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/125/large/spewku-1.webp?1765516456",
+        "https://cdna.artstation.com/p/assets/images/images/094/483/126/large/spewku-2.webp?1765516459",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/129/large/spewku-3.webp?1765516461",
+        "https://cdna.artstation.com/p/assets/images/images/094/483/132/large/spewku-4.webp?1765516465",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/133/large/spewku-5.webp?1765516469",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/135/large/spewku-6.webp?1765516472",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/137/large/spewku-7.webp?1765516475",
+        "https://cdna.artstation.com/p/assets/images/images/094/483/138/large/spewku-8.webp?1765516478",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/139/large/spewku-9.webp?1765516481",
+        "https://cdnb.artstation.com/p/assets/images/images/094/483/141/large/spewku-10.webp?1765516485",
+        "https://cdna.artstation.com/p/assets/images/images/094/483/142/large/spewku-11.webp?1765516488"
+      ],
+      "embed": "",
+      "id": "dyk3AW",
+      "isAvatar": false,
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null,
+      "gameArtTab": "environmental-modeling"
     },
     {
       "type": "personal",
@@ -799,33 +842,6 @@
       ],
       "isAvatar": false,
       "id": "8vBgWw",
-      "gameArtTab": "character-modeling"
-    },
-    {
-      "type": "professional",
-      "is3D": true,
-      "title": "Modeled Sci-Fi Hallway",
-      "description": "Sci-fi Hallway final for 3D modeling 1\nModeled parts of hall way in Maya, then moved to Unreal Engine to implement all the pieces together to create a walkable environment. No texturing, everything is done through lighting in Unreal.",
-      "sourceLink": "https://www.artstation.com/artwork/dyk3AW",
-      "images": [
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/125/large/spewku-1.webp?1765516456",
-        "https://cdna.artstation.com/p/assets/images/images/094/483/126/large/spewku-2.webp?1765516459",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/129/large/spewku-3.webp?1765516461",
-        "https://cdna.artstation.com/p/assets/images/images/094/483/132/large/spewku-4.webp?1765516465",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/133/large/spewku-5.webp?1765516469",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/135/large/spewku-6.webp?1765516472",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/137/large/spewku-7.webp?1765516475",
-        "https://cdna.artstation.com/p/assets/images/images/094/483/138/large/spewku-8.webp?1765516478",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/139/large/spewku-9.webp?1765516481",
-        "https://cdnb.artstation.com/p/assets/images/images/094/483/141/large/spewku-10.webp?1765516485",
-        "https://cdna.artstation.com/p/assets/images/images/094/483/142/large/spewku-11.webp?1765516488"
-      ],
-      "embed": "",
-      "thumbnail": "https://cdna.artstation.com/p/assets/images/images/100/027/968/smaller_square/spewku-st1.jpg?1781661290",
-      "thumbnailCrop": null,
-      "tags": [],
-      "isAvatar": false,
-      "id": "La539K",
       "gameArtTab": "character-modeling"
     },
     {
@@ -905,7 +921,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdna.artstation.com/p/assets/images/images/103/017/848/smaller_square/spewku-screenshot-2026-10-07-005803.jpg?1791350585",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "furry",
@@ -919,7 +940,8 @@
         "retexture"
       ],
       "isAvatar": false,
-      "id": "V82Xo8"
+      "id": "V82Xo8",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "personal",
@@ -977,7 +999,11 @@
       ],
       "embed": "",
       "id": "8B3Pr6",
-      "isAvatar": false
+      "isAvatar": false,
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null,
+      "gameArtTab": "environmental-modeling"
     },
     {
       "type": "professional",
@@ -995,7 +1021,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/103/017/763/20261007001744/smaller_square/spewku-screenshot-2026-10-07-004638.jpg?1791350264",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "furry",
@@ -1008,7 +1039,8 @@
         "3d"
       ],
       "isAvatar": false,
-      "id": "vzbWNa"
+      "id": "vzbWNa",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -1026,7 +1058,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdna.artstation.com/p/assets/images/images/103/017/630/20261007001038/smaller_square/spewku-screenshot-2026-10-06-233004.jpg?1791349838",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "Vrchat",
@@ -1040,7 +1077,8 @@
         "vrchat furry"
       ],
       "isAvatar": false,
-      "id": "egRLG6"
+      "id": "egRLG6",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -1055,7 +1093,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdnb.artstation.com/p/assets/images/images/102/957/805/20261004211212/smaller_square/spewku-bigman1.jpg?1791166332",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "Game Art",
@@ -1069,7 +1112,8 @@
         "Splatoon Model"
       ],
       "isAvatar": false,
-      "id": "1LNg1Z"
+      "id": "1LNg1Z",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -1084,7 +1128,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdna.artstation.com/p/assets/images/images/103/017/820/20261007002036/smaller_square/spewku-screenshot-2026-10-07-005158.jpg?1791350436",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "furry",
@@ -1097,7 +1146,8 @@
         "texture"
       ],
       "isAvatar": false,
-      "id": "G1vnb4"
+      "id": "G1vnb4",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "personal",
@@ -1131,7 +1181,11 @@
       ],
       "embed": "",
       "id": "gRaV9G",
-      "isAvatar": false
+      "isAvatar": false,
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "professional",
@@ -1145,7 +1199,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/957/764/smaller_square/spewku-glitch1.jpg?1791166125",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "3d",
@@ -1157,7 +1216,8 @@
         "Furry Model"
       ],
       "isAvatar": false,
-      "id": "xd3bAO"
+      "id": "xd3bAO",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "professional",
@@ -1172,7 +1232,12 @@
       ],
       "embed": "",
       "thumbnail": "https://cdna.artstation.com/p/assets/images/images/102/957/338/smaller_square/spewku-goob1.jpg?1791164697",
-      "thumbnailCrop": null,
+      "thumbnailCrop": {
+        "x": 100,
+        "y": 100,
+        "width": 200,
+        "height": 200
+      },
       "tags": [
         "NoAI",
         "Character Modeling",
@@ -1182,7 +1247,8 @@
         "anthro"
       ],
       "isAvatar": false,
-      "id": "8vBgWw"
+      "id": "8vBgWw",
+      "gameArtTab": "character-modeling"
     },
     {
       "type": "personal",
@@ -1208,21 +1274,6 @@
       ],
       "embed": "",
       "id": "V25qY4"
-    },
-    {
-      "type": "professional",
-      "is3D": true,
-      "title": "Avatar Retexture Commission",
-      "description": "",
-      "sourceLink": "https://www.artstation.com/artwork/KR38NG",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/103/017/700/large/spewku-screenshot-2026-10-06-234306.jpg?1791350054",
-        "https://cdnb.artstation.com/p/assets/images/images/103/017/701/large/spewku-screenshot-2026-10-07-002547.jpg?1791350025"
-      ],
-      "embed": "",
-      "id": "qJDqDz",
-      "isAvatar": false,
-      "gameArtTab": "props-weapons"
     },
     {
       "type": "personal",
@@ -1304,7 +1355,11 @@
       ],
       "embed": "",
       "id": "oJk634",
-      "isAvatar": false
+      "isAvatar": false,
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null,
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "professional",
@@ -1318,7 +1373,10 @@
       "embed": "",
       "id": "dyk3AW",
       "isAvatar": false,
-      "gameArtTab": "environmental-modeling"
+      "gameArtTab": "2d-illustration",
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null
     },
     {
       "type": "professional",
@@ -1332,7 +1390,10 @@
       "embed": "",
       "id": "8B3Pr6",
       "isAvatar": false,
-      "gameArtTab": "environmental-modeling"
+      "gameArtTab": "2d-illustration",
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null
     },
     {
       "type": "personal",
@@ -1581,26 +1642,6 @@
     {
       "type": "professional",
       "is3D": true,
-      "title": "Splatoon Modeled Arcade Machine ",
-      "description": "Arcade Cabinet modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
-      "sourceLink": "https://www.artstation.com/artwork/gRaVPG",
-      "images": [
-        "https://cdna.artstation.com/p/assets/images/images/094/437/284/large/spewku-37.webp?1765405483",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/281/large/spewku-40.webp?1765405473",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/274/large/spewku-44.webp?1765405459",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/278/large/spewku-43.webp?1765405463",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/279/large/spewku-42.webp?1765405467",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/280/large/spewku-41.webp?1765405470",
-        "https://cdna.artstation.com/p/assets/images/images/094/437/282/large/spewku-39.webp?1765405476",
-        "https://cdnb.artstation.com/p/assets/images/images/094/437/283/large/spewku-38.webp?1765405480"
-      ],
-      "embed": "",
-      "id": "gRaVPG",
-      "isAvatar": false
-    },
-    {
-      "type": "professional",
-      "is3D": true,
       "title": "Modeled Drill Press",
       "description": "Drill Press modeling Final for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/y4r2QO",
@@ -1661,6 +1702,24 @@
     {
       "type": "professional",
       "is3D": true,
+      "title": "Avatar Retexture Commission",
+      "description": "",
+      "sourceLink": "https://www.artstation.com/artwork/KR38NG",
+      "images": [
+        "https://cdna.artstation.com/p/assets/images/images/103/017/700/large/spewku-screenshot-2026-10-06-234306.jpg?1791350054",
+        "https://cdnb.artstation.com/p/assets/images/images/103/017/701/large/spewku-screenshot-2026-10-07-002547.jpg?1791350025"
+      ],
+      "embed": "",
+      "id": "qJDqDz",
+      "isAvatar": false,
+      "gameArtTab": "character-modeling",
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null
+    },
+    {
+      "type": "professional",
+      "is3D": true,
       "title": "Modeled Pencil Sharpener",
       "description": "Pencil Sharpener modeling assignment for Intro to 3D modeling.\nWas modeled in Maya, then textured in Substance Painter. Rendered using Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/4NGPaq",
@@ -1679,7 +1738,7 @@
     {
       "type": "professional",
       "is3D": true,
-      "title": "Modeled Fox Door Knocker ",
+      "title": "Modeled Fox Door Knocker",
       "description": "Doorknocker Assignment for 3D modeling 2.\nWas modeled in Maya and Zbrush, then textured in Substance Painter. Rendered using Substance 3D stager and Substance painter.",
       "sourceLink": "https://www.artstation.com/artwork/qJDqDz",
       "images": [
@@ -1697,7 +1756,11 @@
       ],
       "embed": "",
       "id": "qJDqDz",
-      "isAvatar": false
+      "isAvatar": false,
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null,
+      "gameArtTab": "props-weapons"
     },
     {
       "type": "professional",
@@ -2004,7 +2067,11 @@
       ],
       "embed": "",
       "id": "qJkPqP",
-      "isAvatar": false
+      "isAvatar": false,
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null,
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "personal",
@@ -2030,7 +2097,11 @@
       ],
       "embed": "",
       "id": "DLb3ge",
-      "isAvatar": false
+      "isAvatar": false,
+      "tags": [],
+      "thumbnail": "",
+      "thumbnailCrop": null,
+      "gameArtTab": "2d-illustration"
     },
     {
       "type": "personal",
