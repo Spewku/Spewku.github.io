@@ -1,8 +1,7 @@
 {
   "personal": {
-    "bio": "Hi there! My name is Spewku\nI am currently 20 attending College, I'm majoring in Game Art and minoring in Psychology\nCurrently I do art as a passion but hopefully one day as my full time job!\nI have many different types of Mediums I work on so check em out!",
+    "bio": "Hi there! My name is Spewku\nI am currently 20 attending College, majoring in Game Art.\nCurrently I do art as a passion but hopefully one day as my full time job!\nI have many different types of Mediums I work on so check em out!",
     "commissionLink": "https://spewkuprices.carrd.co/",
-    "commissionQueue": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTaYLx0AD2VrJFgxEJED3gb950iaWii7R8vGqMyJA1eHBcuIk0AcYfg_Xwq0g-ZtWd4yRL-5VzXCfBG/pubhtml?gid=1354450412&single=true",
     "socials": {
       "discord": "https://discord.com/users/653301669295292426",
       "youtube": "https://www.youtube.com/channel/UCfLTX_yDxQh9ZA-UkRIk4tA",
@@ -12,13 +11,28 @@
       "tumblr": "https://www.tumblr.com/spewkuu"
     },
     "links": [
-      { "label": "ArtStation", "url": "https://www.artstation.com/spewku" },
-      { "label": "Toyhouse", "url": "https://toyhou.se/spewkuu" }
+      {
+        "label": "ArtStation",
+        "url": "https://www.artstation.com/spewku"
+      },
+      {
+        "label": "Toyhouse",
+        "url": "https://toyhou.se/spewkuu"
+      }
     ],
     "footerContacts": [
-      { "label": "Email", "url": "mailto:spewku.business@gmail.com" },
-      { "label": "Etsy", "url": "https://www.etsy.com/shop/Spewku" },
-      { "label": "Cash App", "url": "https://cash.app/$Spewku" }
+      {
+        "label": "Email",
+        "url": "freakyyfurz@gmail.com"
+      },
+      {
+        "label": "Etsy",
+        "url": "https://www.etsy.com/shop/Spewku"
+      },
+      {
+        "label": "Cash App",
+        "url": "https://cash.app/$Spewku"
+      }
     ]
   },
   "about": {
@@ -26,47 +40,110 @@
   },
   "socialsPage": {
     "icons": [
-      { "name": "Discord", "url": "https://discord.com/users/653301669295292426" },
-      { "name": "YouTube", "url": "https://www.youtube.com/channel/UCfLTX_yDxQh9ZA-UkRIk4tA" },
-      { "name": "Instagram", "url": "https://www.instagram.com/spewku" },
-      { "name": "TikTok", "url": "https://www.tiktok.com/@spewkuwu" },
-      { "name": "X / Twitter", "url": "https://x.com/Spewkuu" },
-      { "name": "Tumblr", "url": "https://www.tumblr.com/spewkuu" }
+      {
+        "name": "Discord",
+        "url": "https://discord.com/users/653301669295292426"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/channel/UCfLTX_yDxQh9ZA-UkRIk4tA"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/spewku"
+      },
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/@spewkuwu"
+      },
+      {
+        "name": "X / Twitter",
+        "url": "https://x.com/Spewkuu"
+      },
+      {
+        "name": "Tumblr",
+        "url": "https://www.tumblr.com/spewkuu"
+      }
     ],
     "grid": [
-      { "name": "Discord", "url": "https://discord.com/users/653301669295292426" },
-      { "name": "YouTube", "url": "https://www.youtube.com/channel/UCfLTX_yDxQh9ZA-UkRIk4tA" },
-      { "name": "Instagram", "url": "https://www.instagram.com/spewku" },
-      { "name": "TikTok", "url": "https://www.tiktok.com/@spewkuwu" },
-      { "name": "X / Twitter", "url": "https://x.com/Spewkuu" },
-      { "name": "Tumblr", "url": "https://www.tumblr.com/spewkuu" }
+      {
+        "name": "Discord",
+        "url": "https://discord.com/users/653301669295292426"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/channel/UCfLTX_yDxQh9ZA-UkRIk4tA"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/spewku"
+      },
+      {
+        "name": "TikTok",
+        "url": "https://www.tiktok.com/@spewkuwu"
+      },
+      {
+        "name": "X / Twitter",
+        "url": "https://x.com/Spewkuu"
+      },
+      {
+        "name": "Tumblr",
+        "url": "https://www.tumblr.com/spewkuu"
+      }
     ],
     "socialImage": "",
     "footerContacts": [
-      { "label": "Email", "url": "mailto:spewku.business@gmail.com" },
-      { "label": "Etsy", "url": "https://www.etsy.com/shop/Spewku" },
-      { "label": "Cash App", "url": "https://cash.app/$Spewku" }
+      {
+        "label": "Email",
+        "url": "freakyyfurz@gmail.com"
+      },
+      {
+        "label": "Etsy",
+        "url": "https://www.etsy.com/shop/Spewku"
+      },
+      {
+        "label": "Cash App",
+        "url": "https://cash.app/$Spewku"
+      }
     ]
   },
   "site": {
     "pfpImage": "/personal/pfp.png"
   },
   "professional": {
-    "name": "Your Name",
+    "name": "Hayden Koren",
     "headline": "Game Artist & 3D Modeler",
-    "bio": "Game artist specializing in environment and character modeling, with a focus on real-time production. I build assets in Maya and ZBrush, texture them in Substance Painter, and assemble scenes in Unreal Engine.",
+    "bio": "Game artist specializing in environment and character modeling, with a focus on real-time production. I build assets in various different programs, such as Autodesk Maya, Zbrush, Blender, texture in Substance Painter, and assemble scenes in Unreal Engine, Unity and more.",
     "image": "/personal/glitch_pfp.png",
     "aboutTitle": "About the Artist",
     "aboutBio": "I am a game artist with a focus on 3D modeling for games. My work spans environmental modeling, character modeling, and prop and weapon creation, from blockout through final texturing and presentation.\n\nMy process typically starts in Maya for modeling, moves through ZBrush for high-detail sculpting, and finishes in Substance Painter for texturing. I also enjoy putting assets together in Unreal Engine to check scale, lighting, and how a finished environment reads in real time.\n\nI am currently open to entry-level game art roles, internships, and freelance opportunities. Thanks for taking the time to look through my work.",
     "contacts": [
-      { "label": "Email", "url": "mailto:spewku.business@gmail.com" },
-      { "label": "ArtStation", "url": "https://www.artstation.com/spewku" }
+      {
+        "label": "Email",
+        "url": "hayden.koren@mymail.champlain.edu"
+      },
+      {
+        "label": "ArtStation",
+        "url": "https://www.artstation.com/spewku"
+      }
     ],
     "tabs": [
-      { "id": "environmental-modeling", "name": "Environmental Modeling" },
-      { "id": "character-modeling", "name": "Character Modeling" },
-      { "id": "props-weapons", "name": "Props & Weapons" },
-      { "id": "2d-illustration", "name": "2D Illustration" }
+      {
+        "id": "environmental-modeling",
+        "name": "Environmental Modeling"
+      },
+      {
+        "id": "character-modeling",
+        "name": "Character Modeling"
+      },
+      {
+        "id": "props-weapons",
+        "name": "Props & Weapons"
+      },
+      {
+        "id": "2d-illustration",
+        "name": "2D Illustration"
+      }
     ]
   }
 }
